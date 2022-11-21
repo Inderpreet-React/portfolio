@@ -4,7 +4,7 @@ function App() {
 	return (
 		<div className="App">
 			<Navbar />
-			<div>Body</div>
+			<div className="mt-24 bg-black">Body</div>
 		</div>
 	);
 }
