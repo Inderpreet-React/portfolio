@@ -6,7 +6,7 @@ import ContactMe from "./components/ContactMe";
 
 function App() {
 	return (
-		<>
+		<div className="">
 			<div className="flex h-screen flex-col">
 				<Navbar />
 				<div className="relative mt-24 flex flex-grow flex-col overflow-hidden bg-neutral-900 text-white">
@@ -16,7 +16,7 @@ function App() {
 				</div>
 			</div>
 			<ContactMe />
-		</>
+		</div>
 	);
 }
 
