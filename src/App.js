@@ -1,10 +1,17 @@
 import Navbar from "./components/Navbar";
+import AboutMe from "./components/AboutMe";
+import PurpleBlob from "./components/PurpleBlob";
+import YellowBlob from "./components/YellowBlob";
 
 function App() {
 	return (
-		<div className="App">
+		<div className="flex h-screen">
 			<Navbar />
-			<div className="mt-24 bg-black">Body</div>
+			<div className="relative mt-24 flex flex-grow overflow-hidden bg-black text-white">
+				<AboutMe />
+				<PurpleBlob />
+				<YellowBlob />
+			</div>
 		</div>
 	);
 }
