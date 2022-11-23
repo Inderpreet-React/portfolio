@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className="flex h-screen">
 			<Navbar />
-			<div className="relative mt-24 flex flex-grow overflow-hidden bg-black text-white">
+			<div className="relative mt-24 flex flex-grow overflow-hidden bg-neutral-900 text-white">
 				<AboutMe />
 				<PurpleBlob />
 				<YellowBlob />

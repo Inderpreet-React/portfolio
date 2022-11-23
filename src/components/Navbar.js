@@ -7,13 +7,13 @@ export default function Navbar() {
 				Inderpreet
 			</h1>
 			<ul className="hidden gap-20 md:visible md:flex">
-				<li className="cursor-pointer rounded bg-gray-800 p-2 opacity-80 transition-colors hover:bg-rose-500 hover:opacity-100">
+				<li className="w-24 cursor-pointer rounded bg-neutral-800 p-2 text-center opacity-80 transition-colors hover:bg-rose-500 hover:opacity-100">
 					<div className="text-sm font-semibold text-white">About me</div>
 				</li>
-				<li className="cursor-pointer rounded bg-gray-800 p-2 opacity-80 transition-colors hover:bg-amber-500 hover:opacity-100">
+				<li className="w-24 cursor-pointer rounded bg-neutral-800 p-2 text-center opacity-80 transition-colors hover:bg-amber-500 hover:opacity-100">
 					<div className="text-sm font-semibold text-white">Skills</div>
 				</li>
-				<li className="cursor-pointer rounded bg-gray-800 p-2 opacity-80 transition-colors hover:bg-emerald-500 hover:opacity-100">
+				<li className="w-24 cursor-pointer rounded bg-neutral-800 p-2 text-center opacity-80 transition-colors hover:bg-emerald-500 hover:opacity-100">
 					<div className="text-sm font-semibold text-white">Projects</div>
 				</li>
 			</ul>
