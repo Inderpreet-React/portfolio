@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe";
 import PurpleBlob from "./components/PurpleBlob";
 import YellowBlob from "./components/YellowBlob";
 import ContactMe from "./components/ContactMe";
+import Projects from "./components/Projects";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<YellowBlob />
 				</div>
 			</div>
+			<Projects />
 			<ContactMe />
 		</div>
 	);
