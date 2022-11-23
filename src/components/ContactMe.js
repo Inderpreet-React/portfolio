@@ -15,10 +15,10 @@ export default function ContactMe() {
 							Name:
 						</span>
 						<div className="relative h-full w-full md:w-2/3">
-							<span className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 blur group-hover:-inset-1"></span>
+							{/* <span className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-teal-600 blur group-hover:-inset-1"></span> */}
 							<input
 								required
-								className="focus:ring-none relative h-full w-full rounded border-2 border-neutral-700 bg-neutral-300 p-2 text-neutral-900 focus:outline-none"
+								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-200 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none"
 								type="text"
 							/>
 						</div>
@@ -29,10 +29,10 @@ export default function ContactMe() {
 							E-mail:
 						</span>
 						<div className="relative h-full w-full md:w-2/3">
-							<span className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 blur group-hover:-inset-1"></span>
+							{/* <span className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-teal-600 blur group-hover:-inset-1"></span> */}
 							<input
 								required
-								className="focus:ring-none relative h-full w-full rounded border-2 border-neutral-700 bg-neutral-300 p-2 text-neutral-900 focus:outline-none"
+								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-200 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none"
 								type="email"
 							/>
 						</div>
@@ -43,15 +43,15 @@ export default function ContactMe() {
 							Message:
 						</span>
 						<div className="relative h-full w-full md:w-2/3">
-							<span className="absolute -inset-0.5 h-full rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 blur group-hover:-inset-1"></span>
+							{/* <span className="absolute -inset-0.5 h-full rounded-lg bg-gradient-to-r from-pink-600 to-teal-600 blur group-hover:-inset-1"></span> */}
 							<textarea
 								required
-								className="focus:ring-none relative h-full w-full rounded border-2 border-neutral-700 bg-neutral-300 p-2 text-neutral-900 focus:outline-none"
+								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-200 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none"
 							/>
 						</div>
 					</div>
 					<div className="group relative w-28 self-end">
-						<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 blur group-hover:-inset-1"></span>
+						<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-amber-600 to-teal-600 blur group-hover:-inset-1"></span>
 						<button className="relative w-full rounded bg-neutral-900 p-3 text-gray-300 group-hover:text-white">
 							Send
 						</button>
