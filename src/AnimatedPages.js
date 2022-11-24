@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Projects from "./components/Projects";
