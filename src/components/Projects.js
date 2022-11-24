@@ -6,7 +6,7 @@ import {
 
 export default function Projects() {
 	return (
-		<div className="flex h-screen w-full flex-col gap-4 bg-neutral-800 p-4 pt-24 text-white md:p-8 md:pb-24">
+		<div className="flex h-screen w-full flex-col gap-4 bg-neutral-800 p-4 pt-24 text-white md:p-8 md:pt-24">
 			<h1 className="mt-2 text-4xl font-extrabold underline underline-offset-8">
 				Projects
 			</h1>
