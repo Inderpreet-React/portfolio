@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import { useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -14,7 +15,8 @@ export default function AnimatedPages() {
 			<Routes location={location} key={location.pathname}>
 				<Route path="/" element={<AboutMe />} />
 				<Route path="/projects" element={<Projects />} />
-				<Route path="contactme" element={<ContactMe />} />
+				<Route path="/skills" element={<Skills />} />
+				<Route path="/contactme" element={<ContactMe />} />
 			</Routes>
 		</AnimatePresence>
 	);
