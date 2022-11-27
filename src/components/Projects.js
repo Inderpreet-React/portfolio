@@ -11,7 +11,7 @@ export default function Projects() {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div className="flex h-screen w-full flex-col gap-4 bg-neutral-800 p-4 pt-24 text-white md:p-8 md:pt-24">
+			<div className="flex h-screen w-full flex-col gap-4 bg-neutral-900 p-4 pt-24 text-white md:p-8 md:pt-24">
 				<h1 className="mt-2 text-4xl font-extrabold underline underline-offset-8 md:p-0">
 					Projects
 				</h1>
