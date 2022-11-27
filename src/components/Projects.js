@@ -1,11 +1,10 @@
 import React from "react";
-import {
-	ChevronDoubleLeftIcon,
-	ChevronDoubleRightIcon,
-} from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
+	const img = "https://wallpaperaccess.com/full/138728.jpg ";
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -13,18 +12,27 @@ export default function Projects() {
 			exit={{ opacity: 0 }}
 		>
 			<div className="flex h-screen w-full flex-col gap-4 bg-neutral-800 p-4 pt-24 text-white md:p-8 md:pt-24">
-				<h1 className="mt-2 text-4xl font-extrabold underline underline-offset-8">
+				<h1 className="mt-2 text-4xl font-extrabold underline underline-offset-8 md:p-0">
 					Projects
 				</h1>
-				<div className="flex h-full w-full items-center justify-center">
+				<div className="flex h-full w-full items-center justify-center overflow-scroll">
 					<div className=" h-full w-full rounded">
-						<div className="relative flex h-full w-full items-center justify-center border-2 border-neutral-500">
-							<div className="absolute left-4 top-[42%] flex h-12 w-12 cursor-pointer items-center justify-center rounded border-2 border-purple-600 fill-white shadow-md shadow-purple-600 transition-all hover:shadow-lg hover:shadow-purple-600">
-								<ChevronDoubleLeftIcon className="h-10 w-10" />
-							</div>
-							<div className="absolute right-4 top-[42%] flex h-12 w-12 cursor-pointer items-center justify-center rounded border-2 border-purple-600 fill-white shadow-md shadow-purple-600 transition-all hover:shadow-lg hover:shadow-purple-600">
-								<ChevronDoubleRightIcon className="h-10 w-10" />
-							</div>
+						<div className="relative flex h-full w-full flex-col gap-10 overflow-y-scroll p-2 md:flex-row md:items-center md:justify-start md:overflow-x-auto md:border-2 md:border-neutral-500 md:pt-4">
+							<ProjectItem
+								img={img}
+								name="E-Shopee"
+								desc={"A E-Commerce website"}
+							/>
+							<ProjectItem
+								img={img}
+								name="E-Shopee"
+								desc={"A E-Commerce website"}
+							/>
+							<ProjectItem
+								img={img}
+								name="E-Shopee"
+								desc={"A E-Commerce website"}
+							/>
 						</div>
 					</div>
 				</div>
