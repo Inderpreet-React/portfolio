@@ -22,7 +22,7 @@ export default function ContactMe() {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full  rounded border-2 border-teal-600 bg-stone-200 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full  rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
 								type="text"
 							/>
 						</div>
@@ -33,7 +33,7 @@ export default function ContactMe() {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-200 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
 								type="email"
 							/>
 						</div>
@@ -44,7 +44,7 @@ export default function ContactMe() {
 							</span>
 							<textarea
 								required
-								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-200 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
