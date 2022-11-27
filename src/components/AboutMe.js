@@ -13,11 +13,11 @@ export default function AboutMe() {
 			<div className="relative flex h-screen flex-col bg-neutral-900 pt-24 text-white">
 				<div className="relative flex h-full w-full flex-col items-center justify-center gap-8 p-4 md:p-8">
 					<h1 className="relative w-full text-left text-6xl font-extrabold md:w-1/2 md:text-8xl">
-						<span className="absolute -top-6 -left-2 text-lg font-normal text-neutral-700 md:-left-8">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{" </h1>"}
 						</span>
 						Hey,
-						<span className="absolute -bottom-6 -left-2 text-lg font-normal text-neutral-700 md:-left-8">
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{" </h1>"}
 						</span>
 					</h1>
@@ -25,11 +25,11 @@ export default function AboutMe() {
 						I'm Inderpreet.
 					</h1>
 					<h1 className="relative flex w-full flex-col whitespace-normal text-2xl font-semibold text-neutral-400 md:w-1/2 md:text-4xl">
-						<span className="absolute -top-6 -left-2 text-lg font-normal text-neutral-700 md:-left-8">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<p> "}
 						</span>
 						A Web developer
-						<span className="absolute -bottom-6 -left-2 text-lg font-normal text-neutral-700 md:-left-8">
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{" </p>"}
 						</span>
 					</h1>
