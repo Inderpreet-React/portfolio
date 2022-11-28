@@ -11,12 +11,20 @@ export default function Skills() {
 		<div className="h-full min-h-screen w-full bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
 			<div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-20">
 				<div className="flex w-full flex-col gap-10 md:w-1/2">
-					<h1 className="max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:whitespace-nowrap md:text-6xl">
-						Skills & Experience
-					</h1>
+					<div className="relative">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"<h1>"}
+						</span>
+						<h1 className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:whitespace-nowrap md:text-6xl">
+							Skills & Experience
+						</h1>
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"</h1>"}
+						</span>
+					</div>
 					<p className="relative text-justify text-lg">
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{"<p> "}
+							{"<p>"}
 						</span>
 						Est est culpa voluptate nulla eiusmod occaecat irure eiusmod
 						ullamco. Irure cupidatat consequat consectetur ad laboris excepteur
@@ -29,12 +37,12 @@ export default function Skills() {
 						sunt magna. Fugiat nostrud aute magna cupidatat sunt excepteur irure
 						id in officia sit qui.
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{" </p>"}
+							{"</p>"}
 						</span>
 					</p>
 					<p className="relative text-justify text-lg">
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{"<a> "}
+							{"<a>"}
 						</span>
 						Visit my{" "}
 						<a
@@ -54,7 +62,7 @@ export default function Skills() {
 						</Link>
 						directly.
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{" </a>"}
+							{"</a>"}
 						</span>
 					</p>
 				</div>
@@ -64,7 +72,7 @@ export default function Skills() {
 					</h3>
 					<div className="relative md:ml-8">
 						<span className="absolute -top-4 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{"<ul> "}
+							{"<ul>"}
 						</span>
 						<div className="relative mt-4 flex items-center gap-4 border-2 border-yellow-300 p-4 text-lg font-semibold shadow-sm shadow-yellow-300 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-300 md:w-96">
 							<div className="w-20">
@@ -97,7 +105,7 @@ export default function Skills() {
 							<span>Tailwind</span>
 						</div>
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{" </ul>"}
+							{"</ul>"}
 						</span>
 					</div>
 				</div>
