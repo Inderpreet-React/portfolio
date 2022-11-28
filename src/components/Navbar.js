@@ -5,7 +5,7 @@ export default function Navbar() {
 	const location = useLocation();
 
 	return (
-		<div className="fixed top-0 left-0 z-10 flex h-24 w-full items-center justify-between border-b border-gray-500 bg-black p-4 text-white md:p-8">
+		<div className="fixed top-0 left-0 z-50 flex h-24 w-full items-center justify-between border-b border-gray-500 bg-black p-4 text-white md:p-8">
 			<Link
 				to=""
 				className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-2xl font-extrabold text-transparent"
