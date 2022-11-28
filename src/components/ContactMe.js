@@ -10,12 +10,23 @@ export default function ContactMe() {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div className="flex h-screen w-full flex-col bg-neutral-900 p-6 pt-28 text-white md:p-12  md:pt-32">
-				<h1 className="max-w-min whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-3 text-5xl font-extrabold underline underline-offset-8 md:text-6xl">
-					Contact me
-				</h1>
+			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
+				<div className="relative">
+					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						{"<h1>"}
+					</span>
+					<h1 className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl">
+						Contact Me
+					</h1>
+					<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						{"</h1>"}
+					</span>
+				</div>
 				<div className="flex flex-col gap-6 md:flex-row md:gap-12">
-					<form className="relative flex h-full w-full flex-col gap-10 pt-10 md:w-1/2 md:gap-10 md:pt-24">
+					<form className="relative flex h-full w-full flex-col gap-10 md:w-1/2 md:gap-10">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"<form>"}
+						</span>
 						<div className="flex h-12 flex-col gap-2 md:h-14 md:flex-row">
 							<span className="w-full self-center text-xl font-semibold text-neutral-300 md:w-1/3 md:self-start">
 								Name:
@@ -48,43 +59,60 @@ export default function ContactMe() {
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
-							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-amber-600 to-teal-600 blur group-hover:-inset-1"></span>
+							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-violet-500 to-rose-500 blur group-hover:-inset-1"></span>
 							<button className="relative w-full rounded bg-neutral-900 p-3 font-semibold text-gray-300 group-hover:text-white">
 								Send
 							</button>
 						</div>
+						<span className="absolute -bottom-2 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"</form>"}
+						</span>
 					</form>
 					<div>
 						<h2 className="relative max-w-min text-2xl font-semibold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-gradient-to-l after:from-pink-500 after:to-violet-500">
+							<span className="absolute -top-6 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
+								{"<a>"}
+							</span>
 							Socials
+							<span className="absolute -bottom-8 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
+								{"</a>"}
+							</span>
 						</h2>
-						<div className="relative mt-4 flex flex-col gap-2 md:mt-16 md:gap-8">
-							<a
-								href="https://github.com/Inderpreet-React"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex gap-2 rounded border-2 border-amber-600 p-2 shadow-sm shadow-amber-600 transition-all after:top-0 after:left-0 after:w-2 after:bg-amber-600 hover:shadow-lg hover:shadow-amber-600 md:shadow-md md:shadow-amber-600"
-							>
-								<div className="flex h-16 w-16 fill-white text-white">
-									<GithubIcon />
-								</div>
-								<p className="flex w-full items-center justify-center">
-									Checkout my Github account for my recent Projects.
-								</p>
-							</a>
-							<a
-								href="https://github.com/Inderpreet-React"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex gap-2 rounded border-2 border-emerald-600 p-2 shadow-sm shadow-emerald-600 transition-all after:top-0 after:left-0 after:w-2 after:bg-emerald-600 hover:shadow-lg hover:shadow-emerald-600 md:shadow-md md:shadow-emerald-600"
-							>
-								<div className="flex h-16 w-16 fill-white text-white">
-									<LinkedInIcon />
-								</div>
-								<p className="flex w-full items-center justify-center">
-									Checkout my LinkedIn profile for my recent updates.
-								</p>
-							</a>
+						<div>
+							<div className="relative mt-4 flex flex-col gap-2 md:mt-16 md:gap-8">
+								<span className="absolute -top-6 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
+									{"<a>"}
+								</span>
+								<a
+									href="https://github.com/Inderpreet-React"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex gap-2 rounded border-2 border-yellow-300 p-2 shadow-sm shadow-yellow-300 transition-all after:top-0 after:left-0 after:w-2 after:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-300 md:shadow-md md:shadow-yellow-300"
+								>
+									<div className="flex h-16 w-16 fill-white text-white">
+										<GithubIcon />
+									</div>
+									<p className="flex w-full items-center justify-center">
+										Checkout my Github account for my recent Projects.
+									</p>
+								</a>
+								<a
+									href="https://github.com/Inderpreet-React"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="flex gap-2 rounded border-2 border-cyan-300 p-2 shadow-sm shadow-cyan-300 transition-all after:top-0 after:left-0 after:w-2 after:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-300 md:shadow-md md:shadow-cyan-300"
+								>
+									<div className="flex h-16 w-16 fill-white text-white">
+										<LinkedInIcon />
+									</div>
+									<p className="flex w-full items-center justify-center">
+										Checkout my LinkedIn profile for my recent updates.
+									</p>
+								</a>
+								<span className="absolute -bottom-8 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
+									{"</a>"}
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
