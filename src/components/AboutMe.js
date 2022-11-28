@@ -1,6 +1,7 @@
 import React from "react";
 import PurpleBlob from "./PurpleBlob";
 import YellowBlob from "./YellowBlob";
+import PinkBlob from "./PinkBlob";
 import { motion } from "framer-motion";
 
 export default function AboutMe() {
@@ -10,7 +11,7 @@ export default function AboutMe() {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div className="relative flex h-screen flex-col bg-neutral-900 pt-24 text-white">
+			<div className="relative flex h-screen flex-col overflow-hidden bg-neutral-900 pt-24 text-white">
 				<div className="relative flex h-full w-full flex-col items-center justify-center gap-8 p-4 md:p-8">
 					<h1 className="relative w-full text-left text-6xl font-extrabold md:w-1/2 md:text-8xl">
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
@@ -36,6 +37,7 @@ export default function AboutMe() {
 				</div>
 				<PurpleBlob />
 				<YellowBlob />
+				<PinkBlob />
 			</div>
 		</motion.div>
 	);
