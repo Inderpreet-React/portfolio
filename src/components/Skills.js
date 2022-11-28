@@ -70,7 +70,7 @@ export default function Skills() {
 					<h3 className="relative max-w-min text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
 						Technologies
 					</h3>
-					<div className="relative text-xl font-bold tracking-widest md:ml-12 md:font-extrabold">
+					<div className="relative text-xl font-bold tracking-widest md:ml-12 md:font-bold">
 						<span className="absolute -top-4 -left-0 text-lg font-normal italic text-neutral-700 md:-top-3 md:-left-12">
 							{"<ul>"}
 						</span>
