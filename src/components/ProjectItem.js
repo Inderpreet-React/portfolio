@@ -1,16 +1,19 @@
 import React from "react";
 
-export default function ProjectItem({ img, name, desc }) {
+export default function ProjectItem({ img, name, desc, color }) {
+	console.log(color);
 	return (
-		<div className="w-full rounded border-2 border-emerald-500 text-white md:min-w-[45%]">
-			<p className="z-10 w-full min-w-full bg-emerald-500 p-2 text-center text-lg font-semibold ">
+		<div className="group h-full w-full rounded transition-all hover:-translate-y-4">
+			<span className="relative z-10 min-w-full max-w-min rounded bg-violet-700 p-2 text-2xl font-bold tracking-normal text-gray-100 transition-all">
 				{name || "Name"}
-			</p>
-			<img
-				className="z-20 aspect-video w-full md:h-full"
-				src={img}
-				alt="project"
-			/>
+			</span>
+			<div className="relative z-20 overflow-hidden border-8 border-rose-500 transition-all group-hover:shadow-lg group-hover:shadow-rose-800">
+				<img
+					className={`aspect-video w-full  transition-all group-hover:scale-105 md:h-full`}
+					src={img}
+					alt="project"
+				/>
+			</div>
 		</div>
 	);
 }

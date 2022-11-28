@@ -3,7 +3,21 @@ import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
-	const img = "https://wallpaperaccess.com/full/138728.jpg ";
+	const img =
+		"https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000";
+	const colorOption = [
+		"yellow",
+		"cyan",
+		"lime",
+		"indigo",
+		"purple",
+		"fuchsia",
+		"pink",
+	];
+
+	function get_random(list) {
+		return list[Math.floor(Math.random() * list.length)];
+	}
 
 	return (
 		<motion.div
@@ -11,29 +25,46 @@ export default function Projects() {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div className="flex h-screen w-full flex-col gap-4 bg-neutral-900 p-4 pt-24 text-white md:p-8 md:pt-24">
-				<h1 className="mt-2 text-4xl font-extrabold underline underline-offset-8 md:p-0">
-					Projects
-				</h1>
-				<div className="flex h-full w-full items-center justify-center overflow-scroll">
-					<div className=" h-full w-full rounded">
-						<div className="relative flex h-full w-full flex-col gap-10 overflow-y-scroll p-2 md:flex-row md:items-center md:justify-start md:overflow-x-auto md:border-2 md:border-neutral-500 md:pt-4">
+			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
+				<div className="relative">
+					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						{"<h1>"}
+					</span>
+					<h1 className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl">
+						Projects
+					</h1>
+					<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						{"</h1>"}
+					</span>
+				</div>
+				<div className="flex h-full w-full items-center justify-center md:mb-8">
+					<div className="relative mb-12 h-full w-full rounded">
+						<span className="absolute -top-2 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"<ul>"}
+						</span>
+						<div className="relative grid h-full w-full flex-col gap-8 p-2 md:grid-cols-2 md:gap-x-20 md:gap-y-20 md:pt-4">
 							<ProjectItem
 								img={img}
 								name="E-Shopee"
 								desc={"A E-Commerce website"}
+								color={get_random(colorOption)}
 							/>
 							<ProjectItem
 								img={img}
-								name="E-Shopee"
+								name="Gym Management"
 								desc={"A E-Commerce website"}
+								color={get_random(colorOption)}
 							/>
 							<ProjectItem
 								img={img}
-								name="E-Shopee"
+								name="Todo List"
 								desc={"A E-Commerce website"}
+								color={get_random(colorOption)}
 							/>
 						</div>
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-bottom-20 md:-left-8">
+							{"</ul>"}
+						</span>
 					</div>
 				</div>
 			</div>
