@@ -39,10 +39,10 @@ export default function Projects() {
 				</div>
 				<div className="flex h-full w-full items-center justify-center md:mb-8">
 					<div className="relative mb-12 h-full w-full rounded">
-						<span className="absolute -top-2 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -top-8 -left-2 text-lg font-normal italic text-neutral-700 md:-top-2 md:-left-8">
 							{"<ul>"}
 						</span>
-						<div className="relative grid h-full w-full flex-col gap-8 p-2 md:grid-cols-2 md:gap-x-20 md:gap-y-20 md:pt-4">
+						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-2 md:gap-x-20 md:gap-y-10 md:pt-4">
 							<ProjectItem
 								img={img}
 								name="E-Shopee"
@@ -58,6 +58,18 @@ export default function Projects() {
 							<ProjectItem
 								img={img}
 								name="Todo List"
+								desc={"A E-Commerce website"}
+								color={get_random(colorOption)}
+							/>
+							<ProjectItem
+								img={img}
+								name="Chat App"
+								desc={"A E-Commerce website"}
+								color={get_random(colorOption)}
+							/>
+							<ProjectItem
+								img={img}
+								name="Covid Tracker"
 								desc={"A E-Commerce website"}
 								color={get_random(colorOption)}
 							/>
