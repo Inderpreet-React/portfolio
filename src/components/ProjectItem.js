@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProjectItem({ img, name, desc, color }) {
+export default function ProjectItem({ img, name, color }) {
 	console.log(color);
 	return (
 		<div className="group h-full w-full rounded transition-all hover:-translate-y-4">

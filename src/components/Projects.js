@@ -5,19 +5,6 @@ import ProjectItem from "./ProjectItem";
 export default function Projects() {
 	const img =
 		"https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000";
-	const colorOption = [
-		"yellow",
-		"cyan",
-		"lime",
-		"indigo",
-		"purple",
-		"fuchsia",
-		"pink",
-	];
-
-	function get_random(list) {
-		return list[Math.floor(Math.random() * list.length)];
-	}
 
 	return (
 		<motion.div
@@ -43,36 +30,11 @@ export default function Projects() {
 							{"<ul>"}
 						</span>
 						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-2 md:gap-x-20 md:gap-y-10 md:pt-4">
-							<ProjectItem
-								img={img}
-								name="E-Shopee"
-								desc={"A E-Commerce website"}
-								color={get_random(colorOption)}
-							/>
-							<ProjectItem
-								img={img}
-								name="Gym Management"
-								desc={"A E-Commerce website"}
-								color={get_random(colorOption)}
-							/>
-							<ProjectItem
-								img={img}
-								name="Todo List"
-								desc={"A E-Commerce website"}
-								color={get_random(colorOption)}
-							/>
-							<ProjectItem
-								img={img}
-								name="Chat App"
-								desc={"A E-Commerce website"}
-								color={get_random(colorOption)}
-							/>
-							<ProjectItem
-								img={img}
-								name="Covid Tracker"
-								desc={"A E-Commerce website"}
-								color={get_random(colorOption)}
-							/>
+							<ProjectItem img={img} name="E-Shopee" />
+							<ProjectItem img={img} name="Gym Management" />
+							<ProjectItem img={img} name="Todo List" />
+							<ProjectItem img={img} name="Chat App" />
+							<ProjectItem img={img} name="Covid Tracker" />
 						</div>
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-bottom-20 md:-left-8">
 							{"</ul>"}
