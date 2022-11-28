@@ -10,13 +10,13 @@ export default function ContactMe() {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 		>
-			<div className="flex h-screen w-full flex-col bg-neutral-900 p-4 pt-24 text-white md:p-8  md:pt-24">
-				<h1 className="mt-2 text-4xl font-extrabold underline underline-offset-8">
+			<div className="flex h-screen w-full flex-col bg-neutral-900 p-6 pt-28 text-white md:p-12  md:pt-32">
+				<h1 className="max-w-min whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-3 text-5xl font-extrabold underline underline-offset-8 md:text-6xl">
 					Contact me
 				</h1>
 				<div className="flex flex-col gap-6 md:flex-row md:gap-12">
-					<form className="relative flex h-full w-full flex-col gap-14 pt-10 md:w-1/2 md:gap-10 md:pt-24">
-						<div className="flex h-12 flex-col gap-4 md:h-14 md:flex-row">
+					<form className="relative flex h-full w-full flex-col gap-10 pt-10 md:w-1/2 md:gap-10 md:pt-24">
+						<div className="flex h-12 flex-col gap-2 md:h-14 md:flex-row">
 							<span className="w-full self-center text-xl font-semibold text-neutral-300 md:w-1/3 md:self-start">
 								Name:
 							</span>
@@ -27,7 +27,7 @@ export default function ContactMe() {
 							/>
 						</div>
 
-						<div className="flex h-12 flex-col gap-4 md:h-14 md:flex-row">
+						<div className="flex h-12 flex-col gap-2 md:h-14 md:flex-row">
 							<span className="w-full self-center text-xl font-semibold text-neutral-300 md:w-1/3 md:self-start">
 								E-mail:
 							</span>
@@ -38,7 +38,7 @@ export default function ContactMe() {
 							/>
 						</div>
 
-						<div className="flex h-32 flex-col gap-4 md:h-36 md:flex-row">
+						<div className="flex h-32 flex-col gap-2 md:h-36 md:flex-row">
 							<span className="w-full self-center text-xl font-semibold text-neutral-300 md:w-1/3 md:self-start">
 								Message:
 							</span>
@@ -49,13 +49,15 @@ export default function ContactMe() {
 						</div>
 						<div className="group relative w-28 self-end">
 							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-amber-600 to-teal-600 blur group-hover:-inset-1"></span>
-							<button className="relative w-full rounded bg-neutral-900 p-3 text-gray-300 group-hover:text-white">
+							<button className="relative w-full rounded bg-neutral-900 p-3 font-semibold text-gray-300 group-hover:text-white">
 								Send
 							</button>
 						</div>
 					</form>
 					<div>
-						<h2 className="text-2xl font-semibold underline">Socials</h2>
+						<h2 className="relative max-w-min text-2xl font-semibold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-gradient-to-l after:from-pink-500 after:to-violet-500">
+							Socials
+						</h2>
 						<div className="relative mt-4 flex flex-col gap-2 md:mt-16 md:gap-8">
 							<a
 								href="https://github.com/Inderpreet-React"
