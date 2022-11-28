@@ -8,13 +8,16 @@ import TailwindIcon from "../images/TailwindIcon.png";
 
 export default function Skills() {
 	return (
-		<div className="h-full min-h-screen w-full bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pt-32">
+		<div className="h-full min-h-screen w-full bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
 			<div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-20">
 				<div className="flex w-full flex-col gap-10 md:w-1/2">
 					<h1 className="max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:whitespace-nowrap md:text-6xl">
 						Skills & Experience
 					</h1>
-					<p className="text-justify text-lg">
+					<p className="relative text-justify text-lg">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"<p> "}
+						</span>
 						Est est culpa voluptate nulla eiusmod occaecat irure eiusmod
 						ullamco. Irure cupidatat consequat consectetur ad laboris excepteur
 						cupidatat voluptate ipsum aliqua Lorem consequat. Ea est do aute sit
@@ -25,8 +28,14 @@ export default function Skills() {
 						cupidatat. Laborum non anim nulla sint est consequat in proident ad
 						sunt magna. Fugiat nostrud aute magna cupidatat sunt excepteur irure
 						id in officia sit qui.
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{" </p>"}
+						</span>
 					</p>
-					<p className="text-justify text-lg">
+					<p className="relative text-justify text-lg">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"<a> "}
+						</span>
 						Visit my{" "}
 						<a
 							href="https://github.com/Inderpreet-React"
@@ -44,13 +53,19 @@ export default function Skills() {
 							Contact me{" "}
 						</Link>
 						directly.
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{" </a>"}
+						</span>
 					</p>
 				</div>
-				<div className="flex w-full flex-col gap-4 pb-2 md:w-1/2">
+				<div className="mb-4 flex w-full flex-col gap-4 pb-2 md:mb-0 md:w-1/2 md:pb-0">
 					<h3 className="relative max-w-min text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
 						Technologies
 					</h3>
-					<div>
+					<div className="relative md:ml-8">
+						<span className="absolute -top-4 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{"<ul> "}
+						</span>
 						<div className="relative mt-4 flex items-center gap-4 border-2 border-yellow-300 p-4 text-lg font-semibold shadow-sm shadow-yellow-300 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-300 md:w-96">
 							<div className="w-20">
 								<JavascriptLogo hw={12} />
@@ -81,6 +96,9 @@ export default function Skills() {
 							</div>
 							<span>Tailwind</span>
 						</div>
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+							{" </ul>"}
+						</span>
 					</div>
 				</div>
 			</div>
