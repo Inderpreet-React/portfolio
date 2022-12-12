@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
+import eshopee from "../images/E-Shopee.png";
+import chatapp from "../images/Chatapp.png";
+import todo from "../images/todo.png";
+import gymManagement from "../images/gymmanagement.png";
 
 export default function Projects() {
 	const img =
@@ -30,10 +34,10 @@ export default function Projects() {
 							{"<ul>"}
 						</span>
 						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-2 md:gap-x-20 md:gap-y-10 md:pt-4">
-							<ProjectItem img={img} name="E-Shopee" />
-							<ProjectItem img={img} name="Gym Management" />
-							<ProjectItem img={img} name="Todo List" />
-							<ProjectItem img={img} name="Chat App" />
+							<ProjectItem img={eshopee} name="E-Shopee" />
+							<ProjectItem img={todo} name="Todo List" />
+							<ProjectItem img={gymManagement} name="Gym Management" />
+							<ProjectItem img={chatapp} name="Chat App" />
 							<ProjectItem img={img} name="Covid Tracker" />
 						</div>
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-bottom-20 md:-left-8">
