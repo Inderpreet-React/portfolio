@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import JavascriptLogo from "../images/JavascriptLogo";
 import ReactIcon from "../images/ReactIcon";
 import FirebaseLogo from "../images/FirebaseLogo";
 import NodeIcon from "../images/NodeIcon";
 import TailwindIcon from "../images/TailwindIcon.png";
+import { motion } from "framer-motion";
 
 export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="h-full min-h-screen w-full bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32"
+			className="h-full min-h-screen w-full overflow-hidden bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32"
 		>
 			<div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-20">
-				<div className="flex w-full flex-col gap-10 md:w-1/2">
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					transition={{ duration: "0.7" }}
+					variants={{
+						hidden: { opacity: 0 },
+						visible: { opacity: 1 },
+					}}
+					className="flex w-full flex-col gap-10 md:w-1/2"
+				>
 					<div className="relative">
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<h1>"}
@@ -68,8 +78,17 @@ export default function Skills() {
 							{"</a>"}
 						</span>
 					</p>
-				</div>
-				<div className="mb-4 flex w-full flex-col gap-4 pb-4 md:mb-0 md:w-1/2 md:pb-0">
+				</motion.div>
+				<motion.div
+					initial="right"
+					whileInView="left"
+					transition={{ duration: "0.5" }}
+					variants={{
+						right: { x: 200, opacity: 0 },
+						left: { x: 0, opacity: 1 },
+					}}
+					className="mb-4 flex w-full flex-col gap-4 pb-4 md:mb-0 md:w-1/2 md:pb-0"
+				>
 					<h3 className="relative max-w-min text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
 						Technologies
 					</h3>
@@ -111,7 +130,7 @@ export default function Skills() {
 							{"</ul>"}
 						</span>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);
