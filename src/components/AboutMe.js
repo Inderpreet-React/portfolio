@@ -17,6 +17,7 @@ export default function AboutMe() {
 							initial: { scale: 1.2, y: "-30%" },
 							animation: { scale: 1, y: 0 },
 						}}
+						viewport={{ once: true }}
 						className="relative w-full text-left text-6xl font-extrabold md:w-1/2 md:text-8xl"
 					>
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
@@ -35,6 +36,7 @@ export default function AboutMe() {
 							initial: { x: "30%" },
 							animation: { x: 0 },
 						}}
+						viewport={{ once: true }}
 						className=" w-full bg-gradient-to-r from-pink-500 to-violet-500 text-left text-5xl font-extrabold md:w-1/2 md:text-8xl"
 					>
 						I'm Inderpreet.
@@ -47,6 +49,7 @@ export default function AboutMe() {
 							initial: { scale: 1.2, y: "100%" },
 							animation: { scale: 1, y: 0 },
 						}}
+						viewport={{ once: true }}
 						className="relative flex w-full flex-col whitespace-normal text-2xl font-semibold text-neutral-400 md:w-1/2 md:text-4xl"
 					>
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">

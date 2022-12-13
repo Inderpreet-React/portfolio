@@ -7,7 +7,17 @@ export default function ContactMe() {
 	return (
 		<section id="contactme">
 			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
-				<div className="relative">
+				<motion.div
+					initial="front"
+					whileInView="animation"
+					transition={{ duration: 0.5, delay: "0.1" }}
+					variants={{
+						front: { x: "-10%" },
+						animation: { x: 0 },
+					}}
+					viewport={{ once: true }}
+					className="relative"
+				>
 					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 						{"<h1>"}
 					</span>
@@ -17,9 +27,19 @@ export default function ContactMe() {
 					<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 						{"</h1>"}
 					</span>
-				</div>
+				</motion.div>
 				<div className="flex flex-col gap-6 md:flex-row md:gap-12">
-					<form className="relative flex h-full w-full flex-col gap-10 md:w-1/2 md:gap-10">
+					<motion.form
+						initial="front"
+						whileInView="animation"
+						transition={{ duration: 0.5, delay: "0.3" }}
+						variants={{
+							front: { opacity: 0 },
+							animation: { opacity: 1 },
+						}}
+						viewport={{ once: true }}
+						className="relative flex h-full w-full flex-col gap-10 md:w-1/2 md:gap-10"
+					>
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<form>"}
 						</span>
@@ -63,9 +83,19 @@ export default function ContactMe() {
 						<span className="absolute -bottom-2 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"</form>"}
 						</span>
-					</form>
+					</motion.form>
 					<div>
-						<h2 className="relative max-w-min text-2xl font-semibold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-gradient-to-l after:from-pink-500 after:to-violet-500">
+						<motion.h2
+							initial="front"
+							whileInView="animation"
+							transition={{ duration: 0.5, delay: "0.3" }}
+							variants={{
+								front: { opacity: 0 },
+								animation: { opacity: 1 },
+							}}
+							viewport={{ once: true }}
+							className="relative max-w-min text-2xl font-semibold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:bg-gradient-to-l after:from-pink-500 after:to-violet-500"
+						>
 							<span className="absolute -top-6 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
 								{"<a>"}
 							</span>
@@ -73,9 +103,19 @@ export default function ContactMe() {
 							<span className="absolute -bottom-8 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
 								{"</a>"}
 							</span>
-						</h2>
+						</motion.h2>
 						<div>
-							<div className="relative mt-4 flex flex-col gap-2 md:mt-16 md:gap-8">
+							<motion.div
+								initial="front"
+								whileInView="animation"
+								transition={{ duration: 0.5, delay: "0.1" }}
+								variants={{
+									front: { x: "100%" },
+									animation: { x: 0 },
+								}}
+								viewport={{ once: true }}
+								className="relative mt-4 flex flex-col gap-2 md:mt-16 md:gap-8"
+							>
 								<span className="absolute -top-6 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
 									{"<a>"}
 								</span>
@@ -108,7 +148,7 @@ export default function ContactMe() {
 								<span className="absolute -bottom-8 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
 									{"</a>"}
 								</span>
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>

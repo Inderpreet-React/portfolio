@@ -11,9 +11,9 @@ export default function ProjectItem({ img, name, color }) {
 		<motion.div
 			initial="entry"
 			whileInView="exit"
-			transition={{ duration: "0.3", type: "tween" }}
+			transition={{ duration: "0.3", ease: "linear" }}
 			variants={variants}
-			// viewport={{ once: true }}
+			viewport={{ once: true }}
 			className="group h-full w-full rounded transition-all hover:-translate-y-4"
 		>
 			<span className="relative z-10 min-w-full max-w-min rounded bg-violet-700 p-2 text-2xl font-bold tracking-normal text-gray-100 transition-all">
