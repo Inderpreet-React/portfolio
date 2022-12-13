@@ -1,9 +1,21 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const variants = {
+	entry: { y: "30%", scale: 1.01, opacity: 0 },
+	exit: { y: 0, scale: 1, opacity: 1 },
+};
 
 export default function ProjectItem({ img, name, color }) {
-	console.log(color);
 	return (
-		<div className="group h-full w-full rounded transition-all hover:-translate-y-4">
+		<motion.div
+			initial="entry"
+			whileInView="exit"
+			transition={{ duration: "0.3", type: "tween" }}
+			variants={variants}
+			// viewport={{ once: true }}
+			className="group h-full w-full rounded transition-all hover:-translate-y-4"
+		>
 			<span className="relative z-10 min-w-full max-w-min rounded bg-violet-700 p-2 text-2xl font-bold tracking-normal text-gray-100 transition-all">
 				{name || "Name"}
 			</span>
@@ -14,6 +26,6 @@ export default function ProjectItem({ img, name, color }) {
 					alt="project"
 				/>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

@@ -12,7 +12,7 @@ export default function Projects() {
 
 	return (
 		<section id="projects">
-			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
+			<div className="flex h-full min-h-screen w-full flex-col gap-12 overflow-hidden bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
 				<div className="relative">
 					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 						{"<h1>"}
