@@ -29,7 +29,7 @@ export default function Projects() {
 						<span className="absolute -top-8 -left-2 text-lg font-normal italic text-neutral-700 md:-top-2 md:-left-8">
 							{"<ul>"}
 						</span>
-						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-2 md:gap-x-20 md:gap-y-10 md:pt-4">
+						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-3 md:gap-x-20 md:gap-y-10 md:pt-4">
 							<ProjectItem img={eshopee} name="E-Shopee" />
 							<ProjectItem img={todo} name="Todo List" />
 							<ProjectItem img={gymManagement} name="Gym Management" />
