@@ -9,7 +9,7 @@ function App() {
 	const isAboutMeVisible = null;
 	return (
 		<div className="scroll-smooth">
-			<div className="flex h-full min-h-screen flex-col">
+			<div className="flex h-full min-h-screen flex-col divide-y divide-neutral-500">
 				<ScrollDown />
 				<Navbar />
 				{/* <AnimatedPages /> */}
