@@ -14,28 +14,39 @@ export default function Skills() {
 			className="h-full min-h-screen w-full overflow-hidden bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32"
 		>
 			<div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-20">
-				<motion.div
-					initial="hidden"
-					whileInView="visible"
-					transition={{ duration: "0.7" }}
-					variants={{
-						hidden: { opacity: 0 },
-						visible: { opacity: 1 },
-					}}
-					className="flex w-full flex-col gap-10 md:w-1/2"
-				>
+				<div className="flex w-full flex-col gap-10 md:w-1/2">
 					<div className="relative">
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<h1>"}
 						</span>
-						<h1 className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:whitespace-nowrap md:text-6xl">
+						<motion.h1
+							initial="front"
+							whileInView="animation"
+							transition={{ duration: 0.5, delay: "0.1" }}
+							variants={{
+								front: { scale: 1.2, x: "-10%" },
+								animation: { scale: 1, x: 0 },
+							}}
+							viewport={{ once: true }}
+							className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:whitespace-nowrap md:text-6xl"
+						>
 							Skills & Experience
-						</h1>
+						</motion.h1>
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"</h1>"}
 						</span>
 					</div>
-					<p className="relative text-justify text-lg">
+					<motion.p
+						initial="hidden"
+						whileInView="visible"
+						transition={{ duration: "0.7", delay: "0.5" }}
+						variants={{
+							hidden: { opacity: 0, scale: 1.1 },
+							visible: { opacity: 1, scale: 1 },
+						}}
+						viewport={{ once: true }}
+						className="relative text-justify text-lg"
+					>
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<p>"}
 						</span>
@@ -52,8 +63,18 @@ export default function Skills() {
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"</p>"}
 						</span>
-					</p>
-					<p className="relative text-justify text-lg">
+					</motion.p>
+					<motion.p
+						initial="down"
+						whileInView="animation"
+						transition={{ duration: 0.3, delay: "0.1" }}
+						variants={{
+							down: { y: "300%" },
+							animation: { y: 0 },
+						}}
+						viewport={{ once: true }}
+						className="relative text-justify text-lg"
+					>
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<a>"}
 						</span>
@@ -77,16 +98,17 @@ export default function Skills() {
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"</a>"}
 						</span>
-					</p>
-				</motion.div>
+					</motion.p>
+				</div>
 				<motion.div
 					initial="right"
 					whileInView="left"
-					transition={{ duration: "0.5" }}
+					transition={{ duration: "0.5", delay: 0.2 }}
 					variants={{
 						right: { x: 200, opacity: 0 },
 						left: { x: 0, opacity: 1 },
 					}}
+					viewport={{ once: true }}
 					className="mb-4 flex w-full flex-col gap-4 pb-4 md:mb-0 md:w-1/2 md:pb-0"
 				>
 					<h3 className="relative max-w-min text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
