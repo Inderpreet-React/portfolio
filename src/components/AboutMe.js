@@ -5,7 +5,7 @@ import PinkBlob from "./PinkBlob";
 
 export default function AboutMe() {
 	return (
-		<section id="home">
+		<section id="aboutme">
 			<div className="relative flex h-screen flex-col overflow-hidden bg-neutral-900 pt-24 text-white">
 				<div className="relative flex h-full w-full flex-col items-center justify-center gap-8 p-4 md:p-8">
 					<h1 className="relative w-full text-left text-6xl font-extrabold md:w-1/2 md:text-8xl">

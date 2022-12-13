@@ -6,15 +6,15 @@ export default function Navbar() {
 
 	return (
 		<div className="fixed top-0 left-0 z-50 flex h-24 w-full items-center justify-between border-b border-gray-500 bg-black p-4 text-white md:p-8">
-			<div
-				to=""
+			<a
+				href="#aboutme"
 				className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-2xl font-extrabold text-transparent"
 			>
 				Inderpreet
-			</div>
+			</a>
 			<ul className="flex gap-2 md:flex md:gap-20">
 				<li className="flex cursor-pointer justify-center  rounded bg-neutral-800 transition-colors hover:bg-rose-500">
-					<a className="text-center md:w-24 md:p-1" href="#home">
+					<a className="text-center md:w-24 md:p-1" href="#aboutme">
 						About me
 					</a>
 				</li>
