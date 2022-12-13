@@ -8,7 +8,10 @@ import TailwindIcon from "../images/TailwindIcon.png";
 
 export default function Skills() {
 	return (
-		<div className="h-full min-h-screen w-full bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
+		<section
+			id="skills"
+			className="h-full min-h-screen w-full bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32"
+		>
 			<div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-20">
 				<div className="flex w-full flex-col gap-10 md:w-1/2">
 					<div className="relative">
@@ -110,6 +113,6 @@ export default function Skills() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

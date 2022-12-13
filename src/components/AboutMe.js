@@ -2,15 +2,10 @@ import React from "react";
 import PurpleBlob from "./PurpleBlob";
 import YellowBlob from "./YellowBlob";
 import PinkBlob from "./PinkBlob";
-import { motion } from "framer-motion";
 
 export default function AboutMe() {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-		>
+		<section id="home">
 			<div className="relative flex h-screen flex-col overflow-hidden bg-neutral-900 pt-24 text-white">
 				<div className="relative flex h-full w-full flex-col items-center justify-center gap-8 p-4 md:p-8">
 					<h1 className="relative w-full text-left text-6xl font-extrabold md:w-1/2 md:text-8xl">
@@ -39,6 +34,6 @@ export default function AboutMe() {
 				<YellowBlob />
 				<PinkBlob />
 			</div>
-		</motion.div>
+		</section>
 	);
 }

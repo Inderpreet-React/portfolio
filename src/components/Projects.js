@@ -11,11 +11,7 @@ export default function Projects() {
 		"https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000";
 
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-		>
+		<section id="projects">
 			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
 				<div className="relative">
 					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
@@ -46,6 +42,6 @@ export default function Projects() {
 					</div>
 				</div>
 			</div>
-		</motion.div>
+		</section>
 	);
 }

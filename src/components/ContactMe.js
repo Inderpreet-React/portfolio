@@ -5,11 +5,7 @@ import { motion } from "framer-motion";
 
 export default function ContactMe() {
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
-		>
+		<section id="contactme">
 			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
 				<div className="relative">
 					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
@@ -117,6 +113,6 @@ export default function ContactMe() {
 					</div>
 				</div>
 			</div>
-		</motion.div>
+		</section>
 	);
 }
