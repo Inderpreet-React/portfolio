@@ -22,7 +22,10 @@ export default function Navbar({
 						isAboutMeVisible && "bg-amber-500"
 					}`}
 				>
-					<a className="p-1 text-center md:w-24 md:p-1" href="#aboutme">
+					<a
+						className="p-1 text-center font-semibold md:w-24 md:p-1"
+						href="#aboutme"
+					>
 						About me
 					</a>
 				</li>
@@ -31,7 +34,10 @@ export default function Navbar({
 						isSkillsVisible && "bg-amber-500"
 					}`}
 				>
-					<a className="p-1 text-center md:w-24 md:p-1" href="#skills">
+					<a
+						className="p-1 text-center font-semibold md:w-24 md:p-1"
+						href="#skills"
+					>
 						Skills
 					</a>
 				</li>
@@ -40,7 +46,10 @@ export default function Navbar({
 						isProjectVisible && "bg-amber-500"
 					}`}
 				>
-					<a className="p-1 text-center md:w-24 md:p-1" href="#projects">
+					<a
+						className="p-1 text-center font-semibold md:w-24 md:p-1"
+						href="#projects"
+					>
 						Projects
 					</a>
 				</li>
