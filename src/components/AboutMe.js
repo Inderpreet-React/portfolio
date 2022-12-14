@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ScrollDown from "./ScrollDown";
 
 export default function AboutMe({ isAboutMeRef }) {
+	const [currentName, setCurrentName] = useState("Frontend Developer.");
+
+	const changeName = () => {
+		if (currentName === "Frontend Developer.") {
+			setCurrentName("Backend Developer.");
+			return;
+		}
+		setCurrentName("Frontend Developer.");
+		return;
+	};
+
+	setTimeout(changeName, 5000);
+
 	return (
 		<section id="aboutme">
 			<div className="relative flex h-screen flex-col overflow-hidden bg-neutral-900 pt-24 text-white">
@@ -53,13 +66,15 @@ export default function AboutMe({ isAboutMeRef }) {
 						viewport={{ once: true }}
 						className="relative flex w-full flex-col whitespace-normal text-2xl font-semibold text-neutral-400 md:w-1/2 md:text-4xl"
 					>
-						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{"<p> "}
-						</span>
-						A Web developer
-						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
-							{" </p>"}
-						</span>
+						<div className="flex">
+							<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+								{"<p> "}
+							</span>
+							I'm a <h1 className="iam ml-3 text-amber-500"> {currentName}</h1>
+							<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+								{" </p>"}
+							</span>
+						</div>
 					</motion.h1>
 				</div>
 			</div>
