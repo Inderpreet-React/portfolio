@@ -5,6 +5,17 @@ import ReactIcon from "../images/ReactIcon";
 import FirebaseLogo from "../images/FirebaseLogo";
 import NodeIcon from "../images/NodeIcon";
 import TailwindIcon from "../images/TailwindIcon.png";
+import BootstrapIcon from "../images/bootstrapLogo.png";
+import SassIcon from "../images/SassIcon";
+import MongoDBIcon from "../images/MongoDBIcon";
+import Express from "../images/express.png";
+import HtmlIcon from "../images/HtmlIcon";
+import CssIcon from "../images/CssIcon";
+import ReduxIcon from "../images/ReduxIcon";
+import GitIcon from "../images/GitIcon";
+import MaterialIcon from "../images/MaterialIcon";
+import RQueryIcon from "../images/RQueryIcon";
+import BashIcon from "../images/BashIcon";
 import { motion } from "framer-motion";
 
 export default function Skills({ isSkillsRef }) {
@@ -119,35 +130,29 @@ export default function Skills({ isSkillsRef }) {
 						<span className="absolute -top-4 -left-0 text-lg font-normal italic text-neutral-700 md:-top-3 md:-left-12">
 							{"<ul>"}
 						</span>
-						<div className="relative mt-4 flex items-center gap-4 border-2 border-yellow-300 p-4 shadow-sm shadow-yellow-300 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-300 md:mr-32">
-							<div className="w-20">
-								<JavascriptLogo hw={12} />
+						<div className="my-2 grid grid-cols-4 gap-y-12 md:grid-cols-5">
+							<HtmlIcon hw={"16"} />
+							<CssIcon hw={"16"} />
+							<JavascriptLogo hw={"16"} />
+							<ReactIcon hw={"16"} />
+							<NodeIcon hw={"16"} />
+							<FirebaseLogo hw={"16"} />
+							<SassIcon hw={"16"} />
+							<MongoDBIcon hw={"16"} />
+							<ReduxIcon hw={"16"} />
+							<GitIcon hw={"16"} />
+							<MaterialIcon hw={"16"} />
+							<RQueryIcon hw={"16"} />
+							<BashIcon hw={"16"} />
+							<div className="w-16">
+								<img src={TailwindIcon} alt="Tailwind" className="h-16 w-16" />
 							</div>
-							<span>JavaScript</span>
-						</div>
-						<div className="relative mt-4 flex items-center gap-4 border-2 border-cyan-300 p-4 shadow-sm shadow-cyan-300 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-300 md:mr-32">
-							<div className="w-20">
-								<ReactIcon hw={12} />
+							<div className="w-16">
+								<img src={BootstrapIcon} alt="Bootstrap" className="w-16" />
 							</div>
-							<span>React</span>
-						</div>
-						<div className="relative  mt-4 flex items-center gap-4 border-2 border-lime-400 p-4 shadow-sm shadow-lime-400 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-lime-400 hover:shadow-lg hover:shadow-lime-400  md:mr-32">
-							<div className="w-20">
-								<NodeIcon hw={12} />
+							<div className="flex w-12 items-center justify-center md:justify-start">
+								<img src={Express} alt="express" className="h-12" />
 							</div>
-							<span>NodeJS</span>
-						</div>
-						<div className="relative mt-4 flex items-center gap-4 border-2 border-amber-400 p-4 shadow-sm shadow-amber-400 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-amber-400 hover:shadow-lg hover:shadow-amber-400  md:mr-32">
-							<div className="w-20">
-								<FirebaseLogo hw={12} />
-							</div>
-							<span>Firebase</span>
-						</div>
-						<div className="relative mt-4 flex items-center gap-4 border-2 border-cyan-300 p-4 shadow-sm shadow-cyan-300 transition-all after:absolute after:right-0 after:top-0 after:h-full after:w-4 after:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-300  md:mr-32">
-							<div className="w-20">
-								<img src={TailwindIcon} alt="Tailwind" className="h-10 w-10" />
-							</div>
-							<span>Tailwind</span>
 						</div>
 						<span className="absolute -left-0 -bottom-8 text-lg font-normal italic text-neutral-700 md:-left-12">
 							{"</ul>"}
