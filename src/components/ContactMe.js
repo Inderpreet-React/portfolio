@@ -3,7 +3,7 @@ import GithubIcon from "../images/GithubIcon";
 import LinkedInIcon from "../images/LinkedInIcon";
 import { motion } from "framer-motion";
 
-export default function ContactMe() {
+export default function ContactMe({ isContactRef }) {
 	return (
 		<section id="contactme">
 			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
@@ -21,7 +21,10 @@ export default function ContactMe() {
 					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 						{"<h1>"}
 					</span>
-					<h1 className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl">
+					<h1
+						ref={isContactRef}
+						className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl"
+					>
 						Contact Me
 					</h1>
 					<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">

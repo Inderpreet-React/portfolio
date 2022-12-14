@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import { useRef } from "react";
-import { useInView, useScroll } from "framer-motion";
+import { useInView } from "framer-motion";
 
 function App() {
 	const isAboutMeRef = useRef(null);
@@ -13,8 +13,8 @@ function App() {
 	const isSkillsVisible = useInView(isSkillsRef);
 	const isProjectRef = useRef(null);
 	const isProjectVisible = useInView(isProjectRef);
-	const { scrollYProgress } = useScroll();
-	console.log(scrollYProgress);
+	const isContactRef = useRef(null);
+	const isContactVisible = useInView(isContactRef);
 
 	return (
 		<div className="scroll-smooth">
@@ -23,11 +23,12 @@ function App() {
 					isAboutMeVisible={isAboutMeVisible}
 					isSkillsVisible={isSkillsVisible}
 					isProjectVisible={isProjectVisible}
+					isContactVisible={isContactVisible}
 				/>
 				<AboutMe isAboutMeRef={isAboutMeRef} />
 				<Skills isSkillsRef={isSkillsRef} />
 				<Projects isProjectRef={isProjectRef} />
-				<ContactMe />
+				<ContactMe isContactRef={isContactRef} />
 			</div>
 		</div>
 	);
