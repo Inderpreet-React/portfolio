@@ -3,9 +3,8 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
-import ScrollDown from "./components/ScrollDown";
 import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useInView, useScroll } from "framer-motion";
 
 function App() {
 	const isAboutMeRef = useRef(null);
@@ -14,17 +13,17 @@ function App() {
 	const isSkillsVisible = useInView(isSkillsRef);
 	const isProjectRef = useRef(null);
 	const isProjectVisible = useInView(isProjectRef);
+	const { scrollYProgress } = useScroll();
+	console.log(scrollYProgress);
 
 	return (
 		<div className="scroll-smooth">
 			<div className="flex h-full min-h-screen flex-col divide-y divide-neutral-500 overflow-hidden">
-				<ScrollDown />
 				<Navbar
 					isAboutMeVisible={isAboutMeVisible}
 					isSkillsVisible={isSkillsVisible}
 					isProjectVisible={isProjectVisible}
 				/>
-				{/* <AnimatedPages /> */}
 				<AboutMe isAboutMeRef={isAboutMeRef} />
 				<Skills isSkillsRef={isSkillsRef} />
 				<Projects isProjectRef={isProjectRef} />

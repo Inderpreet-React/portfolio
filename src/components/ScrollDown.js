@@ -7,7 +7,7 @@ export default function ScrollDown() {
 		<motion.div
 			animate={{ y: ["-200%", "10%"] }}
 			transition={{ repeat: Infinity, repeatType: "reverse" }}
-			className="fixed right-5 z-50 hidden h-10 w-10 text-white md:bottom-5 md:flex"
+			className="absolute right-5  hidden h-10 w-10 text-white md:bottom-5 md:flex"
 		>
 			<ChevronDoubleDownIcon />
 		</motion.div>

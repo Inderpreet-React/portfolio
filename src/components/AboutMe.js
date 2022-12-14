@@ -3,6 +3,7 @@ import PurpleBlob from "./PurpleBlob";
 import YellowBlob from "./YellowBlob";
 import PinkBlob from "./PinkBlob";
 import { motion } from "framer-motion";
+import ScrollDown from "./ScrollDown";
 
 export default function AboutMe({ isAboutMeRef }) {
 	return (
@@ -68,6 +69,7 @@ export default function AboutMe({ isAboutMeRef }) {
 				<YellowBlob />
 				<PinkBlob />
 			</div>
+			<ScrollDown />
 		</section>
 	);
 }
