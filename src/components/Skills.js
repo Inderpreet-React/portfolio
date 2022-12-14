@@ -112,8 +112,8 @@ export default function Skills({ isSkillsRef }) {
 					viewport={{ once: true }}
 					className="mb-4 flex w-full flex-col gap-4 pb-4 md:mb-0 md:w-1/2 md:pb-0"
 				>
-					<h3 className="relative max-w-min text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
-						Technologies
+					<h3 className="relative max-w-min whitespace-nowrap text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
+						Tech Stack
 					</h3>
 					<div className="relative text-xl font-bold tracking-widest md:ml-12 md:font-bold">
 						<span className="absolute -top-4 -left-0 text-lg font-normal italic text-neutral-700 md:-top-3 md:-left-12">
