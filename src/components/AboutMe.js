@@ -51,9 +51,13 @@ export default function AboutMe({ isAboutMeRef }) {
 							animation: { x: 0 },
 						}}
 						viewport={{ once: true }}
-						className=" w-full bg-gradient-to-r from-pink-500 to-violet-500 text-left text-5xl font-extrabold md:w-1/2 md:text-8xl"
+						className="w-full text-left text-5xl font-extrabold md:w-1/2 md:text-8xl"
 					>
-						I'm Inderpreet.
+						I'm{" "}
+						<span className="relative after:absolute after:-bottom-1 after:left-0 after:h-2 after:w-full after:bg-gradient-to-l after:from-pink-500 after:to-violet-500">
+							{" "}
+							Inderpreet.
+						</span>
 					</motion.h1>
 					<motion.h1
 						initial="initial"
