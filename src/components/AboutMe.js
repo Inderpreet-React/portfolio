@@ -4,7 +4,7 @@ import YellowBlob from "./YellowBlob";
 import PinkBlob from "./PinkBlob";
 import { motion } from "framer-motion";
 
-export default function AboutMe() {
+export default function AboutMe({ isAboutMeRef }) {
 	return (
 		<section id="aboutme">
 			<div className="relative flex h-screen flex-col overflow-hidden bg-neutral-900 pt-24 text-white">
@@ -20,7 +20,10 @@ export default function AboutMe() {
 						viewport={{ once: true }}
 						className="relative w-full text-left text-6xl font-extrabold md:w-1/2 md:text-8xl"
 					>
-						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span
+							ref={isAboutMeRef}
+							className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8"
+						>
 							{" </h1>"}
 						</span>
 						Hey,

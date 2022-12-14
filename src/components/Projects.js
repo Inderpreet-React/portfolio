@@ -1,12 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
 import eshopee from "../images/E-Shopee.png";
 import chatapp from "../images/Chatapp.png";
 import todo from "../images/todo.png";
 import gymManagement from "../images/gymmanagement.png";
 
-export default function Projects() {
+export default function Projects({ isProjectRef }) {
 	const img =
 		"https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000";
 
@@ -17,7 +16,10 @@ export default function Projects() {
 					<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 						{"<h1>"}
 					</span>
-					<h1 className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl">
+					<h1
+						ref={isProjectRef}
+						className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl"
+					>
 						Projects
 					</h1>
 					<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">

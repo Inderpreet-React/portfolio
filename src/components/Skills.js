@@ -7,7 +7,7 @@ import NodeIcon from "../images/NodeIcon";
 import TailwindIcon from "../images/TailwindIcon.png";
 import { motion } from "framer-motion";
 
-export default function Skills() {
+export default function Skills({ isSkillsRef }) {
 	return (
 		<section
 			id="skills"
@@ -20,6 +20,7 @@ export default function Skills() {
 							{"<h1>"}
 						</span>
 						<motion.h1
+							ref={isSkillsRef}
 							initial="front"
 							whileInView="animation"
 							transition={{ duration: 0.5, delay: "0.1" }}

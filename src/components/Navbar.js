@@ -1,7 +1,11 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({
+	isAboutMeVisible,
+	isSkillsVisible,
+	isProjectVisible,
+}) {
 	const location = useLocation();
 
 	return (
@@ -13,17 +17,29 @@ export default function Navbar() {
 				Inderpreet
 			</a>
 			<ul className="flex gap-2 md:flex md:gap-20">
-				<li className="flex cursor-pointer justify-center  rounded bg-neutral-800 transition-colors hover:bg-amber-500">
+				<li
+					className={`flex cursor-pointer justify-center  rounded bg-neutral-800 transition-colors hover:bg-amber-500 ${
+						isAboutMeVisible && "bg-amber-500"
+					}`}
+				>
 					<a className="p-1 text-center md:w-24 md:p-1" href="#aboutme">
 						About me
 					</a>
 				</li>
-				<li className="flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors hover:bg-amber-500">
+				<li
+					className={`flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors hover:bg-amber-500 ${
+						isSkillsVisible && "bg-amber-500"
+					}`}
+				>
 					<a className="p-1 text-center md:w-24 md:p-1" href="#skills">
 						Skills
 					</a>
 				</li>
-				<li className="flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors hover:bg-amber-500">
+				<li
+					className={`flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors hover:bg-amber-500 ${
+						isProjectVisible && "bg-amber-500"
+					}`}
+				>
 					<a className="p-1 text-center md:w-24 md:p-1" href="#projects">
 						Projects
 					</a>
