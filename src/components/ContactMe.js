@@ -4,9 +4,11 @@ import LinkedInIcon from "../images/LinkedInIcon";
 import { motion } from "framer-motion";
 
 export default function ContactMe({ isContactRef }) {
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<section id="contactme">
-			<div className="flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
+			<div className="relative flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
 				<motion.div
 					initial="front"
 					whileInView="animation"
@@ -41,6 +43,9 @@ export default function ContactMe({ isContactRef }) {
 							animation: { opacity: 1 },
 						}}
 						viewport={{ once: true }}
+						action="mailto:inderpreet.react.project@gmail.com"
+						method="post"
+						enctype="text/plain"
 						className="relative flex h-full w-full flex-col gap-10 md:w-1/2 md:gap-10"
 					>
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
@@ -54,6 +59,7 @@ export default function ContactMe({ isContactRef }) {
 								required
 								className="focus:ring-none relative h-full w-full  rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
 								type="text"
+								name="name"
 							/>
 						</div>
 
@@ -65,6 +71,7 @@ export default function ContactMe({ isContactRef }) {
 								required
 								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
 								type="email"
+								name="mail"
 							/>
 						</div>
 
@@ -74,12 +81,18 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<textarea
 								required
+								name="message"
+								size="100"
 								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
 							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-violet-500 to-rose-500 blur group-hover:-inset-1"></span>
-							<button className="relative w-full rounded bg-neutral-900 p-3 font-semibold text-gray-300 group-hover:text-white">
+							<button
+								type="submit"
+								value="Send"
+								className="relative w-full rounded bg-neutral-900 p-3 font-semibold text-gray-300 group-hover:text-white"
+							>
 								Send
 							</button>
 						</div>
@@ -155,6 +168,9 @@ export default function ContactMe({ isContactRef }) {
 						</div>
 					</div>
 				</div>
+				<p className="hidden w-full items-center justify-center text-lg text-gray-200 md:flex">
+					&copy; Copyright Inderpreet Singh {currentYear}
+				</p>
 			</div>
 		</section>
 	);
