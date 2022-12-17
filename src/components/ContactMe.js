@@ -57,7 +57,7 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300  bg-neutral-800 p-2 text-neutral-900 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300  bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
 								type="text"
 								name="name"
 								placeholder="Name"
@@ -70,7 +70,7 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-900 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
 								type="email"
 								name="mail"
 								placeholder="E-mail"
@@ -86,7 +86,7 @@ export default function ContactMe({ isContactRef }) {
 								name="message"
 								size="100"
 								placeholder="Message"
-								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-900 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
@@ -141,7 +141,7 @@ export default function ContactMe({ isContactRef }) {
 									href="https://github.com/Inderpreet-React"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex gap-2 rounded border-2 border-emerald-300 p-2 shadow-sm shadow-emerald-700 transition-all hover:scale-105 hover:shadow-lg hover:shadow-emerald-700 md:shadow-md md:shadow-emerald-700"
+									className="flex gap-2 rounded border-2 border-amber-300 p-2 transition-all hover:scale-105 hover:shadow-lg hover:shadow-amber-600"
 								>
 									<div className="flex h-16 w-16 fill-neutral-200">
 										<GithubIcon />
@@ -154,7 +154,7 @@ export default function ContactMe({ isContactRef }) {
 									href="https://github.com/Inderpreet-React"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex gap-2 rounded border-2 border-emerald-300 p-2 shadow-sm shadow-emerald-700 transition-all hover:scale-105 hover:shadow-lg hover:shadow-emerald-700 md:shadow-md md:shadow-emerald-700"
+									className="flex gap-2 rounded border-2 border-yellow-300 p-2 transition-all hover:scale-105 hover:shadow-lg hover:shadow-yellow-600"
 								>
 									<div className="flex h-16 w-16 fill-neutral-200">
 										<LinkedInIcon />
