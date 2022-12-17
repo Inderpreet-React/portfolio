@@ -31,7 +31,7 @@ export default function Projects({ isProjectRef }) {
 						<span className="absolute -top-8 -left-2 text-lg font-normal italic text-neutral-700 md:-top-2 md:-left-8">
 							{"<ul>"}
 						</span>
-						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-3 md:gap-x-20 md:gap-y-10 md:pt-4">
+						<div className="relative grid h-full w-full flex-col gap-20 p-2 md:grid-cols-3 md:place-content-center md:gap-x-10 md:gap-y-10 md:p-4 md:pt-4">
 							<ProjectItem img={eshopee} name="E-Shopee" />
 							<ProjectItem img={todo} name="Todo List" />
 							<ProjectItem img={gymManagement} name="Gym Management" />

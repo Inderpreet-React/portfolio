@@ -17,11 +17,11 @@ export default function ProjectItem({ img, name, link }) {
 			transition={{ duration: "0.5", ease: "easeInOut" }}
 			variants={variants}
 			viewport={{ once: true }}
-			className="group relative h-full w-full rounded"
+			className="group relative h-full w-full"
 		>
 			<div className="relative z-20 overflow-hidden transition-all group-hover:shadow-lg group-hover:shadow-amber-200">
 				<img
-					className="aspect-video w-full rounded md:h-full"
+					className="aspect-video w-full md:h-full"
 					src={img}
 					alt="project"
 				/>
@@ -30,7 +30,7 @@ export default function ProjectItem({ img, name, link }) {
 				<div>
 					<span
 						style={{ clipPath: "polygon(0 0, 100% 0, 100% 40%, 0% 100%)" }}
-						className="absolute left-0 top-0 h-1/2 w-full rounded bg-[#f59e0be6] pl-4 pt-4 text-3xl font-bold tracking-normal text-gray-100 underline decoration-4 underline-offset-8"
+						className="absolute left-0 top-0 h-1/2 w-full bg-[#f59e0be6] pl-4 pt-4 text-3xl font-bold tracking-normal text-gray-100 underline decoration-4 underline-offset-8"
 					>
 						{name || "Name"}
 					</span>
