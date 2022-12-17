@@ -57,9 +57,10 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full  border-2 border-amber-500 bg-stone-100 p-2 text-neutral-900 shadow-md  transition-all focus:shadow-lg focus:shadow-amber-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300  bg-neutral-800 p-2 text-neutral-900 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
 								type="text"
 								name="name"
+								placeholder="Name"
 							/>
 						</div>
 
@@ -69,9 +70,10 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full border-2 border-amber-500 bg-stone-100 p-2 text-neutral-900 shadow-md  transition-all focus:shadow-lg focus:shadow-amber-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-900 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
 								type="email"
 								name="mail"
+								placeholder="E-mail"
 							/>
 						</div>
 
@@ -83,14 +85,15 @@ export default function ContactMe({ isContactRef }) {
 								required
 								name="message"
 								size="100"
-								className="focus:ring-none relative h-full w-full border-2 border-amber-500 bg-stone-100 p-2 text-neutral-900 shadow-md  transition-all focus:shadow-lg focus:shadow-amber-600 focus:outline-none md:w-2/3"
+								placeholder="Message"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-900 caret-emerald-300 shadow-md transition-all  focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
 							<button
 								type="submit"
 								value="Send"
-								className="relative w-full rounded bg-amber-500 py-2 px-3 font-semibold transition-all hover:-translate-y-1 hover:scale-105 hover:bg-amber-600 group-hover:text-white"
+								className="relative w-full bg-emerald-300 py-2 px-3 font-semibold text-neutral-800 transition-all hover:-translate-y-1 hover:scale-105 hover:bg-emerald-400 group-hover:text-white"
 							>
 								Send
 							</button>
@@ -129,7 +132,7 @@ export default function ContactMe({ isContactRef }) {
 									animation: { x: 0 },
 								}}
 								viewport={{ once: true }}
-								className="relative mt-4 flex flex-col gap-2 md:mt-16 md:gap-8"
+								className="relative mt-8 ml-4 flex flex-col gap-8 md:ml-0 md:mt-16 md:justify-start md:gap-8"
 							>
 								<span className="absolute -top-6 -left-2 hidden text-lg font-normal italic text-neutral-700 md:-left-8 md:block">
 									{"<a>"}
@@ -138,9 +141,9 @@ export default function ContactMe({ isContactRef }) {
 									href="https://github.com/Inderpreet-React"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex gap-2 rounded border-2 border-yellow-300 p-2 shadow-sm shadow-yellow-300 transition-all after:top-0 after:left-0 after:w-2 after:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-300 md:shadow-md md:shadow-yellow-300"
+									className="flex gap-2 rounded border-2 border-emerald-300 p-2 shadow-sm shadow-emerald-700 transition-all hover:scale-105 hover:shadow-lg hover:shadow-emerald-700 md:shadow-md md:shadow-emerald-700"
 								>
-									<div className="flex h-16 w-16 fill-white text-white">
+									<div className="flex h-16 w-16 fill-neutral-200">
 										<GithubIcon />
 									</div>
 									<p className="flex w-full items-center justify-center">
@@ -151,9 +154,9 @@ export default function ContactMe({ isContactRef }) {
 									href="https://github.com/Inderpreet-React"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex gap-2 rounded border-2 border-cyan-300 p-2 shadow-sm shadow-cyan-300 transition-all after:top-0 after:left-0 after:w-2 after:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-300 md:shadow-md md:shadow-cyan-300"
+									className="flex gap-2 rounded border-2 border-emerald-300 p-2 shadow-sm shadow-emerald-700 transition-all hover:scale-105 hover:shadow-lg hover:shadow-emerald-700 md:shadow-md md:shadow-emerald-700"
 								>
-									<div className="flex h-16 w-16 fill-white text-white">
+									<div className="flex h-16 w-16 fill-neutral-200">
 										<LinkedInIcon />
 									</div>
 									<p className="flex w-full items-center justify-center">
@@ -167,9 +170,6 @@ export default function ContactMe({ isContactRef }) {
 						</div>
 					</div>
 				</div>
-				<p className="hidden w-full items-center justify-center text-lg text-neutral-400 md:flex">
-					&copy; Copyright Inderpreet Singh {currentYear}
-				</p>
 			</div>
 		</section>
 	);
