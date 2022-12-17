@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import JavascriptLogo from "../images/JavascriptLogo";
 import ReactIcon from "../images/ReactIcon";
 import FirebaseLogo from "../images/FirebaseLogo";
@@ -100,12 +99,12 @@ export default function Skills({ isSkillsRef }) {
 							LinkedIn
 						</a>{" "}
 						or{" "}
-						<Link
+						<a
 							className="relative font-semibold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500"
-							to="/contactme"
+							href="#contactme"
 						>
 							Contact me{" "}
-						</Link>
+						</a>
 						directly.
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"</a>"}
