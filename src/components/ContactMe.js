@@ -55,7 +55,7 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800  p-2 text-neutral-200 caret-emerald-300 shadow-md transition-all focus:border-b-4 focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800  p-2 text-neutral-200 caret-emerald-300 shadow-md outline-none outline-0 outline-amber-300 transition-all focus:border-b-4 focus:shadow-lg focus:shadow-emerald-600 focus:outline-0 focus:placeholder:text-neutral-800 md:w-2/3"
 								type="text"
 								name="name"
 								placeholder="Name"
@@ -68,7 +68,7 @@ export default function ContactMe({ isContactRef }) {
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md transition-all focus:border-b-4 focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
+								className="focus:ring-none outline- outline-amber-3000 relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md outline-none transition-all focus:border-b-4 focus:shadow-lg focus:shadow-emerald-600 focus:outline-0 focus:placeholder:text-neutral-800 md:w-2/3"
 								type="email"
 								name="mail"
 								placeholder="E-mail"
@@ -84,7 +84,7 @@ export default function ContactMe({ isContactRef }) {
 								name="message"
 								size="100"
 								placeholder="Message"
-								className="focus:ring-none relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md transition-all focus:border-b-4 focus:shadow-lg focus:shadow-emerald-600 focus:outline-none focus:placeholder:text-neutral-800 md:w-2/3"
+								className="focus:ring-none outline- outline-amber-3000 relative h-full w-full border-b-2 border-emerald-300 bg-neutral-800 p-2 text-neutral-200 caret-emerald-300 shadow-md outline-none transition-all focus:border-b-4 focus:shadow-lg focus:shadow-emerald-600 focus:outline-0 focus:placeholder:text-neutral-800 md:w-2/3"
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
