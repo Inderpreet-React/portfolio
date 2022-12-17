@@ -16,7 +16,7 @@ export default function Navbar({
 			</a>
 			<ul className="hidden gap-2 md:flex md:gap-20">
 				<li
-					className={`flex cursor-pointer justify-center  rounded bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
+					className={`flex cursor-pointer justify-center  bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
 						isAboutMeVisible && "bg-amber-500"
 					}`}
 				>
@@ -28,7 +28,7 @@ export default function Navbar({
 					</a>
 				</li>
 				<li
-					className={`flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
+					className={`flex cursor-pointer justify-center bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
 						isSkillsVisible && "bg-amber-500"
 					}`}
 				>
@@ -40,7 +40,7 @@ export default function Navbar({
 					</a>
 				</li>
 				<li
-					className={`flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
+					className={`flex cursor-pointer justify-center bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
 						isProjectVisible && "bg-amber-500"
 					}`}
 				>
@@ -52,7 +52,7 @@ export default function Navbar({
 					</a>
 				</li>
 				<li
-					className={`flex cursor-pointer justify-center rounded bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
+					className={`flex cursor-pointer justify-center bg-neutral-800 transition-colors md:hover:bg-amber-500 ${
 						isContactVisible && "bg-amber-500"
 					}`}
 				>
