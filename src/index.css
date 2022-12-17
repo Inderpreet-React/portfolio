@@ -120,9 +120,8 @@ code {
 
 .iam {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid orange; /* The typwriter cursor */
+	border-right: 0.15em solid rgb(52 211 153 / var(--tw-text-opacity)); /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
-	/* margin: 0 auto; Gives that scrolling effect as the typing happens */
 	width: 0;
 	animation: typing 5s steps(45, end) forwards infinite,
 		blink-caret 1s step-end infinite;
@@ -134,9 +133,11 @@ code {
 	0%,
 	100% {
 		width: 0;
+		padding-right: 0;
 	}
 	50% {
 		width: 100%;
+		padding-right: 4px;
 	}
 	90% {
 		width: 0;
@@ -150,6 +151,6 @@ code {
 		border-color: transparent;
 	}
 	50% {
-		border-color: orange;
+		border-color: rgb(52 211 153 / var(--tw-text-opacity));
 	}
 }
