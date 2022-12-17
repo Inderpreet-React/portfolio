@@ -4,8 +4,6 @@ import LinkedInIcon from "../images/LinkedInIcon";
 import { motion } from "framer-motion";
 
 export default function ContactMe({ isContactRef }) {
-	const currentYear = new Date().getFullYear();
-
 	return (
 		<section id="contactme">
 			<div className="relative flex h-full min-h-screen w-full flex-col gap-12 bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32">
