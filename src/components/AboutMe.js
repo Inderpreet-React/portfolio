@@ -74,8 +74,7 @@ export default function AboutMe({ isAboutMeRef }) {
 							<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 								{"<p> "}
 							</span>
-							I'm a{" "}
-							<h1 className="iam ml-3 text-emerald-300"> {currentName}</h1>
+							I'm a <h1 className="iam ml-3 text-amber-400"> {currentName}</h1>
 							<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 								{" </p>"}
 							</span>

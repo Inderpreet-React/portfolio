@@ -120,11 +120,11 @@ code {
 
 .iam {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid rgb(52 211 153 / var(--tw-text-opacity)); /* The typwriter cursor */
+	border-right: 1rem solid rgb(251 191 36 / var(--tw-text-opacity)); /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	width: 0;
 	animation: typing 5s steps(45, end) forwards infinite,
-		blink-caret 1s step-end infinite;
+		blink-caret 0.75s 0.25s step-end infinite;
 	max-width: min-content;
 }
 
@@ -151,6 +151,6 @@ code {
 		border-color: transparent;
 	}
 	50% {
-		border-color: rgb(52 211 153 / var(--tw-text-opacity));
+		border-color: rgb(251 191 36 / var(--tw-text-opacity));
 	}
 }
