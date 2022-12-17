@@ -87,7 +87,7 @@ export default function ContactMe({ isContactRef }) {
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
-							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-violet-500 to-rose-500 blur group-hover:-inset-1"></span>
+							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-pink-500 to-violet-500 blur group-hover:-inset-1"></span>
 							<button
 								type="submit"
 								value="Send"
@@ -168,7 +168,7 @@ export default function ContactMe({ isContactRef }) {
 						</div>
 					</div>
 				</div>
-				<p className="hidden w-full items-center justify-center text-lg text-gray-200 md:flex">
+				<p className="hidden w-full items-center justify-center text-lg text-neutral-400 md:flex">
 					&copy; Copyright Inderpreet Singh {currentYear}
 				</p>
 			</div>
