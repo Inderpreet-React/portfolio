@@ -51,25 +51,25 @@ export default function ContactMe({ isContactRef }) {
 						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
 							{"<form>"}
 						</span>
-						<div className="flex h-12 flex-col gap-2 md:h-14 md:flex-row">
+						<div className="flex h-12 flex-col gap-2 md:h-12 md:flex-row">
 							<span className="w-full self-center text-xl font-semibold text-neutral-300 md:w-1/3 md:self-start">
 								Name:
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full  rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full  border-2 border-amber-500 bg-stone-100 p-2 text-neutral-900 shadow-md  transition-all focus:shadow-lg focus:shadow-amber-600 focus:outline-none md:w-2/3"
 								type="text"
 								name="name"
 							/>
 						</div>
 
-						<div className="flex h-12 flex-col gap-2 md:h-14 md:flex-row">
+						<div className="flex h-12 flex-col gap-2 md:h-12 md:flex-row">
 							<span className="w-full self-center text-xl font-semibold text-neutral-300 md:w-1/3 md:self-start">
 								E-mail:
 							</span>
 							<input
 								required
-								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-2 border-amber-500 bg-stone-100 p-2 text-neutral-900 shadow-md  transition-all focus:shadow-lg focus:shadow-amber-600 focus:outline-none md:w-2/3"
 								type="email"
 								name="mail"
 							/>
@@ -83,15 +83,14 @@ export default function ContactMe({ isContactRef }) {
 								required
 								name="message"
 								size="100"
-								className="focus:ring-none relative h-full w-full rounded border-2 border-teal-600 bg-stone-100 p-2 text-neutral-900 shadow-md shadow-teal-600 transition-all focus:shadow-lg focus:shadow-teal-600 focus:outline-none md:w-2/3"
+								className="focus:ring-none relative h-full w-full border-2 border-amber-500 bg-stone-100 p-2 text-neutral-900 shadow-md  transition-all focus:shadow-lg focus:shadow-amber-600 focus:outline-none md:w-2/3"
 							/>
 						</div>
 						<div className="group relative w-28 self-end">
-							<span className="group:duration-200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-pink-500 to-violet-500 blur group-hover:-inset-1"></span>
 							<button
 								type="submit"
 								value="Send"
-								className="relative w-full rounded bg-neutral-900 p-3 font-semibold text-gray-300 group-hover:text-white"
+								className="relative w-full rounded bg-amber-500 py-2 px-3 font-semibold transition-all hover:-translate-y-1 hover:scale-105 hover:bg-amber-600 group-hover:text-white"
 							>
 								Send
 							</button>
