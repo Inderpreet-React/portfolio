@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			animation: {
 				tilt: "tilt 3s infinite linear",
+				"spin-slow": "spin 3s linear infinite",
 			},
 			keyframes: {
 				tilt: {

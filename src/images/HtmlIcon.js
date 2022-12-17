@@ -6,6 +6,7 @@ export default function HtmlIcon({ hw }) {
 			viewBox="0 0 48 48"
 			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)]`}
 		>
+			<title>HTML5</title>
 			<path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
 			<path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
 			<path

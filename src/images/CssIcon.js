@@ -6,6 +6,7 @@ export default function CssIcon({ hw }) {
 			viewBox="0 0 48 48"
 			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)]`}
 		>
+			<title>CSS3</title>
 			<path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
 			<path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
 			<path

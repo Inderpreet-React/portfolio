@@ -6,6 +6,7 @@ export default function MaterialIcon({ hw }) {
 			viewBox="0 0 48 48"
 			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)]`}
 		>
+			<title>MaterialUI</title>
 			<polygon fill="#29b6f6" points="1,5 7,9 7,29 1,25" />
 			<polygon fill="#0288d1" points="47,20 41,24 41,37 47,33" />
 			<polygon fill="#0288d1" points="47,6 41,10 41,17 47,13" />

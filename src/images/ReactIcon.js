@@ -3,9 +3,10 @@ import React from "react";
 export default function ReactIcon({ hw }) {
 	return (
 		<svg
-			className={`h-${hw} w-${hw} fill-[rgb(0%,86.666667%,98.823529%)]`}
+			className={`h-${hw} w-${hw} animate-spin-slow fill-[rgb(0%,86.666667%,98.823529%)]`}
 			viewBox="0 0 90 90"
 		>
+			<title>React</title>
 			<g id="surface4424363">
 				<path
 					// style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,86.666667%,98.823529%);fill-opacity:1;"
