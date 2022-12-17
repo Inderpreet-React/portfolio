@@ -17,7 +17,7 @@ export default function ProjectItem({ img, name, link }) {
 			transition={{ duration: "0.5", ease: "easeInOut" }}
 			variants={variants}
 			viewport={{ once: true }}
-			className="group relative h-full w-full"
+			className="group relative h-full w-full brightness-90"
 		>
 			<div className="relative z-20 overflow-hidden transition-all group-hover:shadow-lg group-hover:shadow-amber-200">
 				<img
