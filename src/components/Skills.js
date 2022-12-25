@@ -91,7 +91,7 @@ export default function Skills({ isSkillsRef }) {
 						</span>
 						Visit my{" "}
 						<a
-							href="https://github.com/Inderpreet-React"
+							href="https://www.linkedin.com/in/inderpreet-singh-961478229/"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="relative font-semibold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500"

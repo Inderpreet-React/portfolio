@@ -32,11 +32,31 @@ export default function Projects({ isProjectRef }) {
 							{"<ul>"}
 						</span>
 						<div className="relative grid h-full w-full flex-col gap-20 p-2 lg:grid-cols-3 lg:place-content-center lg:gap-x-10 lg:gap-y-10 lg:p-4 lg:pt-4">
-							<ProjectItem img={eshopee} name="E-Shopee" />
-							<ProjectItem img={todo} name="Todo List" />
-							<ProjectItem img={gymManagement} name="Gym Management" />
-							<ProjectItem img={chatapp} name="Chat App" />
-							<ProjectItem img={img} name="Covid Tracker" />
+							<ProjectItem
+								img={eshopee}
+								name="E-Shopee"
+								link="https://github.com/Inderpreet-React/e-shopee"
+							/>
+							<ProjectItem
+								img={todo}
+								name="Todo List"
+								link="https://github.com/Inderpreet-React/todo"
+							/>
+							<ProjectItem
+								img={gymManagement}
+								name="Gym Management"
+								link="https://github.com/Inderpreet-React/gym-management"
+							/>
+							<ProjectItem
+								img={chatapp}
+								name="Chat App"
+								link="https://github.com/Inderpreet-React/chat-app"
+							/>
+							<ProjectItem
+								img={img}
+								name="Covid Tracker"
+								link="https://github.com/Inderpreet-React/covid-dashboard"
+							/>
 						</div>
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-bottom-20 lg:-left-8">
 							{"</ul>"}

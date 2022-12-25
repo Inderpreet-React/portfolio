@@ -149,7 +149,7 @@ export default function ContactMe({ isContactRef }) {
 									</p>
 								</a>
 								<a
-									href="https://github.com/Inderpreet-React"
+									href="https://www.linkedin.com/in/inderpreet-singh-961478229/"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="flex gap-2 rounded border-2 border-white p-2 transition-all hover:scale-105 hover:shadow-lg hover:shadow-neutral-600"

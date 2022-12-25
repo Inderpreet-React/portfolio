@@ -40,6 +40,8 @@ export default function ProjectItem({ img, name, link }) {
 					>
 						<a
 							href={link || "#"}
+							target="_blank"
+							rel="noopener noreferrer"
 							className="absolute right-4 bottom-4 h-10 w-10 fill-neutral-800"
 						>
 							<GithubIcon cls="h-10 w-10 hover:scale-110 transition-all" />
