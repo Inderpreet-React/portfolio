@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/.github.io/portfolio/static/css/main.9f9b7d89.css",
-    "main.js": "/.github.io/portfolio/static/js/main.5239c8c6.js",
+    "main.js": "/.github.io/portfolio/static/js/main.7e23f511.js",
     "static/media/E-Shopee.png": "/.github.io/portfolio/static/media/E-Shopee.d905a5722cd300ccac7a.png",
     "static/media/gymmanagement.png": "/.github.io/portfolio/static/media/gymmanagement.90bf882a0077547dd096.png",
     "static/media/Chatapp.png": "/.github.io/portfolio/static/media/Chatapp.b299e3ae69c142427127.png",
@@ -10,10 +10,10 @@
     "static/media/TailwindIcon.png": "/.github.io/portfolio/static/media/TailwindIcon.e6215bf476e91225c367.png",
     "index.html": "/.github.io/portfolio/index.html",
     "main.9f9b7d89.css.map": "/.github.io/portfolio/static/css/main.9f9b7d89.css.map",
-    "main.5239c8c6.js.map": "/.github.io/portfolio/static/js/main.5239c8c6.js.map"
+    "main.7e23f511.js.map": "/.github.io/portfolio/static/js/main.7e23f511.js.map"
   },
   "entrypoints": [
     "static/css/main.9f9b7d89.css",
-    "static/js/main.5239c8c6.js"
+    "static/js/main.7e23f511.js"
   ]
 }
