@@ -21,7 +21,7 @@ export default function ProjectItem({ img, name, link }) {
 		>
 			<div className="relative z-20 overflow-hidden transition-all group-hover:shadow-lg group-hover:shadow-amber-200">
 				<img
-					className="aspect-video w-full md:h-full"
+					className="aspect-video w-full lg:h-full"
 					src={img}
 					alt="project"
 				/>

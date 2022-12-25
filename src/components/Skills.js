@@ -21,12 +21,12 @@ export default function Skills({ isSkillsRef }) {
 	return (
 		<section
 			id="skills"
-			className="h-full min-h-screen w-full overflow-hidden bg-neutral-900 p-6 pt-32 text-white md:p-12 md:pb-0 md:pt-32"
+			className="h-full min-h-screen w-full overflow-hidden bg-neutral-900 p-6 pt-32 text-white lg:p-12 lg:pb-0 lg:pt-32"
 		>
-			<div className="flex h-full w-full flex-col gap-10 md:flex-row md:gap-20">
-				<div className="flex w-full flex-col gap-10 md:w-1/2">
+			<div className="flex h-full w-full flex-col gap-10 lg:flex-row lg:gap-20">
+				<div className="flex w-full flex-col gap-10 lg:w-1/2">
 					<div className="relative">
-						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
 							{"<h1>"}
 						</span>
 						<motion.h1
@@ -39,11 +39,11 @@ export default function Skills({ isSkillsRef }) {
 								animation: { scale: 1, x: 0 },
 							}}
 							viewport={{ once: true }}
-							className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text p-2 text-5xl font-extrabold text-transparent md:whitespace-nowrap md:text-6xl "
+							className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text p-2 text-5xl font-extrabold text-transparent lg:whitespace-nowrap lg:text-6xl "
 						>
 							Skills & Experience
 						</motion.h1>
-						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
 							{"</h1>"}
 						</span>
 					</div>
@@ -58,7 +58,7 @@ export default function Skills({ isSkillsRef }) {
 						viewport={{ once: true }}
 						className="relative text-justify text-lg"
 					>
-						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
 							{"<p>"}
 						</span>
 						Est est culpa voluptate nulla eiusmod occaecat irure eiusmod
@@ -71,7 +71,7 @@ export default function Skills({ isSkillsRef }) {
 						cupidatat. Laborum non anim nulla sint est consequat in proident ad
 						sunt magna. Fugiat nostrud aute magna cupidatat sunt excepteur irure
 						id in officia sit qui.
-						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
 							{"</p>"}
 						</span>
 					</motion.p>
@@ -86,7 +86,7 @@ export default function Skills({ isSkillsRef }) {
 						viewport={{ once: true }}
 						className="relative text-justify text-lg"
 					>
-						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
 							{"<a>"}
 						</span>
 						Visit my{" "}
@@ -106,7 +106,7 @@ export default function Skills({ isSkillsRef }) {
 							Contact me{" "}
 						</a>
 						directly.
-						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 md:-left-8">
+						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
 							{"</a>"}
 						</span>
 					</motion.p>
@@ -120,16 +120,16 @@ export default function Skills({ isSkillsRef }) {
 						left: { x: 0, opacity: 1 },
 					}}
 					viewport={{ once: true }}
-					className="mb-4 flex w-full flex-col gap-4 pb-4 md:mb-0 md:w-1/2 md:pb-0"
+					className="mb-4 flex w-full flex-col gap-4 pb-4 lg:mb-0 lg:w-1/2 lg:pb-0"
 				>
-					<h3 className="relative max-w-min whitespace-nowrap text-3xl font-extrabold text-white  after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
+					<h3 className="relative max-w-min whitespace-nowrap text-3xl font-extrabold text-white  after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 lg:pt-10">
 						Tech Stack
 					</h3>
-					<div className="relative text-xl font-bold tracking-widest md:ml-12 md:font-bold">
-						<span className="absolute -top-4 -left-0 text-lg font-normal italic text-neutral-700 md:-top-3 md:-left-12">
+					<div className="relative text-xl font-bold tracking-widest lg:ml-12 lg:font-bold">
+						<span className="absolute -top-4 -left-0 text-lg font-normal italic text-neutral-700 lg:-top-3 lg:-left-12">
 							{"<ul>"}
 						</span>
-						<div className="my-2 grid grid-cols-4 gap-y-12 md:grid-cols-5">
+						<div className="my-2 grid grid-cols-4 gap-y-12 lg:grid-cols-5">
 							<HtmlIcon hw={"16"} />
 							<CssIcon hw={"16"} />
 							<JavascriptLogo hw={"16"} />
@@ -143,7 +143,7 @@ export default function Skills({ isSkillsRef }) {
 								<img src={BootstrapIcon} alt="Bootstrap" className="w-16" />
 							</div>
 							<MongoDBIcon hw={"16"} />
-							<div className="flex w-12 animate-spin-slow items-center justify-center md:justify-start">
+							<div className="flex w-12 animate-spin-slow items-center justify-center lg:justify-start">
 								<img src={Express} alt="express" className="h-12" />
 							</div>
 							<ReactIcon hw={"16"} />
@@ -153,7 +153,7 @@ export default function Skills({ isSkillsRef }) {
 								<img src={TailwindIcon} alt="Tailwind" className="h-16 w-16" />
 							</div>
 						</div>
-						<span className="absolute -left-0 -bottom-8 text-lg font-normal italic text-neutral-700 md:-left-12">
+						<span className="absolute -left-0 -bottom-8 text-lg font-normal italic text-neutral-700 lg:-left-12">
 							{"</ul>"}
 						</span>
 					</div>
