@@ -35,7 +35,7 @@ export default function AboutMe({ isAboutMeRef }) {
 							ref={isAboutMeRef}
 							className="absolute -top-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8"
 						>
-							{" </h1>"}
+							{" <h1>"}
 						</span>
 						Hey,
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-left-8">
