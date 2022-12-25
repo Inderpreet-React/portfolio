@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4130a347.css",
-    "main.js": "/static/js/main.2582d092.js",
-    "static/media/E-Shopee.png": "/static/media/E-Shopee.d905a5722cd300ccac7a.png",
-    "static/media/gymmanagement.png": "/static/media/gymmanagement.90bf882a0077547dd096.png",
-    "static/media/Chatapp.png": "/static/media/Chatapp.b299e3ae69c142427127.png",
-    "static/media/bootstrapLogo.png": "/static/media/bootstrapLogo.f132cb791703420e69ca.png",
-    "static/media/todo.png": "/static/media/todo.05e67ba421b91c16fc95.png",
-    "static/media/TailwindIcon.png": "/static/media/TailwindIcon.e6215bf476e91225c367.png",
-    "index.html": "/index.html",
-    "main.4130a347.css.map": "/static/css/main.4130a347.css.map",
-    "main.2582d092.js.map": "/static/js/main.2582d092.js.map"
+    "main.css": "/portfolio/static/css/main.4130a347.css",
+    "main.js": "/portfolio/static/js/main.d44a0369.js",
+    "static/media/E-Shopee.png": "/portfolio/static/media/E-Shopee.d905a5722cd300ccac7a.png",
+    "static/media/gymmanagement.png": "/portfolio/static/media/gymmanagement.90bf882a0077547dd096.png",
+    "static/media/Chatapp.png": "/portfolio/static/media/Chatapp.b299e3ae69c142427127.png",
+    "static/media/bootstrapLogo.png": "/portfolio/static/media/bootstrapLogo.f132cb791703420e69ca.png",
+    "static/media/todo.png": "/portfolio/static/media/todo.05e67ba421b91c16fc95.png",
+    "static/media/TailwindIcon.png": "/portfolio/static/media/TailwindIcon.e6215bf476e91225c367.png",
+    "index.html": "/portfolio/index.html",
+    "main.4130a347.css.map": "/portfolio/static/css/main.4130a347.css.map",
+    "main.d44a0369.js.map": "/portfolio/static/js/main.d44a0369.js.map"
   },
   "entrypoints": [
     "static/css/main.4130a347.css",
-    "static/js/main.2582d092.js"
+    "static/js/main.d44a0369.js"
   ]
 }
