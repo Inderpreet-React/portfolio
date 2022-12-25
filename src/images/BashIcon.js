@@ -3,7 +3,7 @@ import React from "react";
 export default function BashIcon({ hw }) {
 	return (
 		<svg
-			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)]`}
+			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)] transition-all hover:scale-125`}
 			viewBox="0 0 224 256"
 			version="1.1"
 		>

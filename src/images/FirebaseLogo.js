@@ -2,7 +2,11 @@ import React from "react";
 
 export default function FirebaseLogo({ hw }) {
 	return (
-		<svg className={`h-${hw} w-${hw}`} viewBox="0 0 111 151" version="1.1">
+		<svg
+			className={`h-${hw} w-${hw} transition-all hover:scale-125`}
+			viewBox="0 0 111 151"
+			version="1.1"
+		>
 			<title>Firebase</title>
 			<title>logo_lockup_firebase_vertical</title>
 			<desc>Created with Sketch.</desc>

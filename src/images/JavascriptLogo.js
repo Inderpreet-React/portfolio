@@ -4,7 +4,7 @@ export default function JavascriptLogo({ hw }) {
 	return (
 		<svg
 			viewBox="0 0 90 90"
-			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)]`}
+			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)] transition-all hover:scale-125`}
 		>
 			<title>JavaScript</title>
 			<g id="surface4451425">

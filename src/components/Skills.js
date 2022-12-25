@@ -130,7 +130,7 @@ export default function Skills({ isSkillsRef }) {
 							{"<ul>"}
 						</span>
 						<div className="my-2 grid grid-cols-4 gap-y-12 md:grid-cols-5">
-							<HtmlIcon hw={"16 hover:scale-125"} />
+							<HtmlIcon hw={"16"} />
 							<CssIcon hw={"16"} />
 							<JavascriptLogo hw={"16"} />
 							<ReactIcon hw={"16"} />
@@ -143,13 +143,13 @@ export default function Skills({ isSkillsRef }) {
 							<MaterialIcon hw={"16"} />
 							<RQueryIcon hw={"16"} />
 							<BashIcon hw={"16"} />
-							<div className="w-16">
+							<div className="w-16 transition-all hover:scale-125">
 								<img src={TailwindIcon} alt="Tailwind" className="h-16 w-16" />
 							</div>
-							<div className="w-16">
+							<div className="w-16 transition-all hover:scale-125">
 								<img src={BootstrapIcon} alt="Bootstrap" className="w-16" />
 							</div>
-							<div className="flex w-12 items-center justify-center md:justify-start">
+							<div className="flex w-12 items-center justify-center transition-all hover:scale-125 md:justify-start">
 								<img src={Express} alt="express" className="h-12" />
 							</div>
 						</div>

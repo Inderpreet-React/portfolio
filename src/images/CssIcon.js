@@ -4,7 +4,7 @@ export default function CssIcon({ hw }) {
 	return (
 		<svg
 			viewBox="0 0 48 48"
-			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)]`}
+			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)] transition-all hover:scale-125`}
 		>
 			<title>CSS3</title>
 			<path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
