@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/.github.io/react-gh-pages/static/css/main.9f9b7d89.css",
+    "main.js": "/.github.io/react-gh-pages/static/js/main.d0861467.js",
+    "static/media/E-Shopee.png": "/.github.io/react-gh-pages/static/media/E-Shopee.d905a5722cd300ccac7a.png",
+    "static/media/gymmanagement.png": "/.github.io/react-gh-pages/static/media/gymmanagement.90bf882a0077547dd096.png",
+    "static/media/Chatapp.png": "/.github.io/react-gh-pages/static/media/Chatapp.b299e3ae69c142427127.png",
+    "static/media/bootstrapLogo.png": "/.github.io/react-gh-pages/static/media/bootstrapLogo.f132cb791703420e69ca.png",
+    "static/media/todo.png": "/.github.io/react-gh-pages/static/media/todo.05e67ba421b91c16fc95.png",
+    "static/media/TailwindIcon.png": "/.github.io/react-gh-pages/static/media/TailwindIcon.e6215bf476e91225c367.png",
+    "index.html": "/.github.io/react-gh-pages/index.html",
+    "main.9f9b7d89.css.map": "/.github.io/react-gh-pages/static/css/main.9f9b7d89.css.map",
+    "main.d0861467.js.map": "/.github.io/react-gh-pages/static/js/main.d0861467.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f9b7d89.css",
+    "static/js/main.d0861467.js"
+  ]
+}
