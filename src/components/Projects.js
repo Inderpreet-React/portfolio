@@ -18,7 +18,7 @@ export default function Projects({ isProjectRef }) {
 					</span>
 					<h1
 						ref={isProjectRef}
-						className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:text-6xl"
+						className="relative max-w-min overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text p-2 text-5xl font-extrabold text-transparent md:text-6xl"
 					>
 						Projects
 					</h1>

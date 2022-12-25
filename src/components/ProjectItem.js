@@ -30,13 +30,13 @@ export default function ProjectItem({ img, name, link }) {
 				<div>
 					<span
 						style={{ clipPath: "polygon(0 0, 100% 0, 100% 40%, 0% 100%)" }}
-						className="absolute left-0 -top-2 h-1/2 w-full bg-[#f59e0be6] pl-4 pt-4 text-2xl font-bold tracking-normal text-neutral-800 underline decoration-4 underline-offset-8"
+						className="absolute left-0 -top-2 h-1/2 w-full bg-gradient-to-r from-pink-400 to-violet-500 pl-4 pt-4 text-2xl font-bold tracking-normal text-white underline decoration-4 underline-offset-8"
 					>
 						{name || "Name"}
 					</span>
 					<div
 						style={{ clipPath: "polygon(0 75%, 100% 0, 100% 100%, 0% 100%)" }}
-						className="absolute -bottom-2 right-0 h-1/3 w-full bg-[#f59e0be6]"
+						className="absolute -bottom-2 right-0 h-1/3 w-full bg-gradient-to-r from-pink-400 to-violet-500"
 					>
 						<a
 							href={link || "#"}

@@ -39,7 +39,7 @@ export default function Skills({ isSkillsRef }) {
 								animation: { scale: 1, x: 0 },
 							}}
 							viewport={{ once: true }}
-							className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 p-2 text-5xl font-extrabold underline md:whitespace-nowrap md:text-6xl"
+							className="relative max-w-min overflow-hidden text-ellipsis bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text p-2 text-5xl font-extrabold text-transparent md:whitespace-nowrap md:text-6xl "
 						>
 							Skills & Experience
 						</motion.h1>
@@ -122,7 +122,7 @@ export default function Skills({ isSkillsRef }) {
 					viewport={{ once: true }}
 					className="mb-4 flex w-full flex-col gap-4 pb-4 md:mb-0 md:w-1/2 md:pb-0"
 				>
-					<h3 className="relative max-w-min whitespace-nowrap text-3xl font-bold text-white after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
+					<h3 className="relative max-w-min whitespace-nowrap text-3xl font-extrabold text-white  after:-bottom-1 after:left-0 after:h-1 after:w-full after:rounded-md after:bg-gradient-to-l after:from-pink-500 after:to-violet-500 md:pt-10">
 						Tech Stack
 					</h3>
 					<div className="relative text-xl font-bold tracking-widest md:ml-12 md:font-bold">
@@ -130,7 +130,7 @@ export default function Skills({ isSkillsRef }) {
 							{"<ul>"}
 						</span>
 						<div className="my-2 grid grid-cols-4 gap-y-12 md:grid-cols-5">
-							<HtmlIcon hw={"16"} />
+							<HtmlIcon hw={"16 hover:scale-125"} />
 							<CssIcon hw={"16"} />
 							<JavascriptLogo hw={"16"} />
 							<ReactIcon hw={"16"} />
