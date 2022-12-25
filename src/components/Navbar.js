@@ -1,4 +1,5 @@
 import React from "react";
+import NavItem from "./NavItem";
 
 export default function Navbar({
 	isAboutMeVisible,
@@ -15,54 +16,14 @@ export default function Navbar({
 				Inderpreet
 			</a>
 			<ul className="hidden gap-2 md:flex md:gap-20">
-				<li
-					className={`flex cursor-pointer justify-center  bg-neutral-800 transition-colors md:hover:bg-neutral-600 ${
-						isAboutMeVisible && "bg-gradient-to-r from-pink-500 to-violet-500"
-					}`}
-				>
-					<a
-						className="p-1 text-center font-semibold md:w-24 md:p-1"
-						href="#aboutme"
-					>
-						About me
-					</a>
-				</li>
-				<li
-					className={`flex cursor-pointer justify-center bg-neutral-800 transition-colors md:hover:bg-neutral-600 ${
-						isSkillsVisible && "bg-gradient-to-r from-pink-500 to-violet-500"
-					}`}
-				>
-					<a
-						className="p-1 text-center font-semibold md:w-24 md:p-1"
-						href="#skills"
-					>
-						Skills
-					</a>
-				</li>
-				<li
-					className={`flex cursor-pointer justify-center bg-neutral-800 transition-colors md:hover:bg-neutral-600 ${
-						isProjectVisible && "bg-gradient-to-r from-pink-500 to-violet-500"
-					}`}
-				>
-					<a
-						className="p-1 text-center font-semibold md:w-24 md:p-1"
-						href="#projects"
-					>
-						Projects
-					</a>
-				</li>
-				<li
-					className={`flex cursor-pointer justify-center bg-neutral-800 transition-colors md:hover:bg-neutral-600 ${
-						isContactVisible && "bg-gradient-to-r from-pink-500 to-violet-500"
-					}`}
-				>
-					<a
-						className="p-1 text-center font-semibold md:w-24 md:p-1"
-						href="#contactme"
-					>
-						Contact me
-					</a>
-				</li>
+				<NavItem isVisible={isAboutMeVisible} name="About me" link="aboutme" />
+				<NavItem isVisible={isSkillsVisible} name="Skills" link="skills" />
+				<NavItem isVisible={isProjectVisible} name="Projects" link="projects" />
+				<NavItem
+					isVisible={isContactVisible}
+					name="Contact me"
+					link="contactme"
+				/>
 			</ul>
 		</div>
 	);
