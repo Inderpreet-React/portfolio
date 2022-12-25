@@ -133,24 +133,24 @@ export default function Skills({ isSkillsRef }) {
 							<HtmlIcon hw={"16"} />
 							<CssIcon hw={"16"} />
 							<JavascriptLogo hw={"16"} />
-							<ReactIcon hw={"16"} />
-							<NodeIcon hw={"16"} />
 							<FirebaseLogo hw={"16"} />
-							<SassIcon hw={"16"} />
-							<MongoDBIcon hw={"16"} />
 							<ReduxIcon hw={"16"} />
-							<GitIcon hw={"16"} />
+							<SassIcon hw={"16"} />
 							<MaterialIcon hw={"16"} />
+							<GitIcon hw={"16"} />
 							<RQueryIcon hw={"16"} />
-							<BashIcon hw={"16"} />
-							<div className="w-16 transition-all hover:scale-125">
-								<img src={TailwindIcon} alt="Tailwind" className="h-16 w-16" />
-							</div>
 							<div className="w-16 transition-all hover:scale-125">
 								<img src={BootstrapIcon} alt="Bootstrap" className="w-16" />
 							</div>
-							<div className="flex w-12 items-center justify-center transition-all hover:scale-125 md:justify-start">
+							<MongoDBIcon hw={"16"} />
+							<div className="flex w-12 animate-spin-slow items-center justify-center md:justify-start">
 								<img src={Express} alt="express" className="h-12" />
+							</div>
+							<ReactIcon hw={"16"} />
+							<NodeIcon hw={"16"} />
+							<BashIcon hw={"16"} />
+							<div className="w-16 transition-all hover:scale-125">
+								<img src={TailwindIcon} alt="Tailwind" className="h-16 w-16" />
 							</div>
 						</div>
 						<span className="absolute -left-0 -bottom-8 text-lg font-normal italic text-neutral-700 md:-left-12">

@@ -4,7 +4,7 @@ export default function MongoDBIcon({ hw }) {
 	return (
 		<svg
 			viewBox="0 0 48 48"
-			className={`h-${hw} w-${hw} fill-[rgb(96.862745%,91.37255%,0%)] transition-all hover:scale-125`}
+			className={`h-${hw} w-${hw} animate-spin-slow fill-[rgb(96.862745%,91.37255%,0%)]`}
 		>
 			<title>MongoDB</title>
 			<path
