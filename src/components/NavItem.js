@@ -1,14 +1,17 @@
 import React from "react";
 
-export default function NavItem({ isVisible, name, link }) {
+export default function NavItem({ isVisible, name, link, f }) {
 	return (
 		<li
-			className={`flex cursor-pointer justify-center  bg-neutral-800 transition-colors lg:hover:bg-neutral-600 ${
+			onClick={() => {
+				f(false);
+			}}
+			className={`flex cursor-pointer bg-neutral-800  transition-colors lg:justify-center lg:hover:bg-neutral-600 ${
 				isVisible && "bg-gradient-to-r from-pink-500 to-violet-500"
 			}`}
 		>
 			<a
-				className="p-1 text-center font-semibold lg:w-24 lg:p-1"
+				className="w-full p-1 pl-2 text-left font-semibold lg:w-24 lg:p-1 lg:pl-1 lg:text-center"
 				href={`#${link}`}
 			>
 				{name}
