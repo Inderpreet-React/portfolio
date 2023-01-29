@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.4130a347.css",
-    "main.js": "/static/js/main.2582d092.js",
+    "main.js": "/static/js/main.575fac57.js",
     "static/media/E-Shopee.png": "/static/media/E-Shopee.d905a5722cd300ccac7a.png",
+    "static/media/covid_tracker.png": "/static/media/covid_tracker.9c763b86b3a2a1a2a189.png",
     "static/media/gymmanagement.png": "/static/media/gymmanagement.90bf882a0077547dd096.png",
     "static/media/Chatapp.png": "/static/media/Chatapp.b299e3ae69c142427127.png",
     "static/media/bootstrapLogo.png": "/static/media/bootstrapLogo.f132cb791703420e69ca.png",
@@ -10,10 +11,10 @@
     "static/media/TailwindIcon.png": "/static/media/TailwindIcon.e6215bf476e91225c367.png",
     "index.html": "/index.html",
     "main.4130a347.css.map": "/static/css/main.4130a347.css.map",
-    "main.2582d092.js.map": "/static/js/main.2582d092.js.map"
+    "main.575fac57.js.map": "/static/js/main.575fac57.js.map"
   },
   "entrypoints": [
     "static/css/main.4130a347.css",
-    "static/js/main.2582d092.js"
+    "static/js/main.575fac57.js"
   ]
 }
