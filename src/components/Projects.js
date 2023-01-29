@@ -4,6 +4,7 @@ import eshopee from "../images/E-Shopee.png";
 import chatapp from "../images/Chatapp.png";
 import todo from "../images/todo.png";
 import gymManagement from "../images/gymmanagement.png";
+import covid_tracker from "../images/covid_tracker.png";
 
 export default function Projects({ isProjectRef }) {
 	const img =
@@ -38,14 +39,9 @@ export default function Projects({ isProjectRef }) {
 								link="https://github.com/Inderpreet-React/e-shopee"
 							/>
 							<ProjectItem
-								img={todo}
-								name="Todo List"
-								link="https://github.com/Inderpreet-React/todo"
-							/>
-							<ProjectItem
-								img={gymManagement}
-								name="Gym Management"
-								link="https://github.com/Inderpreet-React/gym-management"
+								img={covid_tracker}
+								name="Covid Tracker"
+								link="https://github.com/Inderpreet-React/covid-tracker"
 							/>
 							<ProjectItem
 								img={chatapp}
@@ -53,9 +49,14 @@ export default function Projects({ isProjectRef }) {
 								link="https://github.com/Inderpreet-React/chat-app"
 							/>
 							<ProjectItem
-								img={img}
-								name="Covid Tracker"
-								link="https://github.com/Inderpreet-React/covid-dashboard"
+								img={gymManagement}
+								name="Gym Management"
+								link="https://github.com/Inderpreet-React/gym-management"
+							/>
+							<ProjectItem
+								img={todo}
+								name="Todo List"
+								link="https://github.com/Inderpreet-React/todo"
 							/>
 						</div>
 						<span className="absolute -bottom-6 -left-2 text-lg font-normal italic text-neutral-700 lg:-bottom-20 lg:-left-8">
