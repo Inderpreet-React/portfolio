@@ -140,6 +140,7 @@ export default function Skills({ isSkillsRef }) {
             <span className="absolute -top-4 -left-0 text-lg font-normal italic text-neutral-700 lg:-top-3 lg:-left-12">
               {"<ul>"}
             </span>
+            <br />
             <div className="my-2 grid grid-cols-4 gap-y-12 lg:grid-cols-5">
               <HtmlIcon hw={"16"} />
               <CssIcon hw={"16"} />
@@ -151,17 +152,32 @@ export default function Skills({ isSkillsRef }) {
               <GitIcon hw={"16"} />
               <RQueryIcon hw={"16"} />
               <div className="w-16 transition-all hover:scale-125">
-                <img src={BootstrapIcon} alt="Bootstrap" className="w-16" />
+                <img
+                  src={BootstrapIcon}
+                  alt="Bootstrap"
+                  className="w-16"
+                  title="Bootstrap"
+                />
               </div>
               <MongoDBIcon hw={"16"} />
               <div className="flex w-12 animate-spin-slow items-center justify-center lg:justify-start">
-                <img src={Express} alt="express" className="h-12" />
+                <img
+                  src={Express}
+                  alt="express"
+                  className="h-12"
+                  title="Express JS"
+                />
               </div>
               <ReactIcon hw={"16"} />
               <NodeIcon hw={"16"} />
               <BashIcon hw={"16"} />
               <div className="w-16 transition-all hover:scale-125">
-                <img src={TailwindIcon} alt="Tailwind" className="h-16 w-16" />
+                <img
+                  src={TailwindIcon}
+                  alt="Tailwind"
+                  className="h-16 w-16"
+                  title="Tailwind"
+                />
               </div>
             </div>
             <span className="absolute -left-0 -bottom-8 text-lg font-normal italic text-neutral-700 lg:-left-12">
